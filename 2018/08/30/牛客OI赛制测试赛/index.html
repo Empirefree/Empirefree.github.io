@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #000000; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #000000, 0 0 5px     #000000; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #000000;    /*上边框颜色*/
+        border-left-color: #000000;    /*左边框颜色*/
+    }
+</style>
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "e882a4c2"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/ava.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="图论,牛客训练,基础+思维," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Empirefree" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="经历太少，才会容易被诱惑  比赛链接最后一题不会唉，看的题解也看不懂，怎么看出矩阵快速幂的，QAQ">
+<meta name="keywords" content="图论,牛客训练,基础+思维">
+<meta property="og:type" content="article">
+<meta property="og:title" content="牛客OI赛制测试赛">
+<meta property="og:url" content="https://empirefree.top/2018/08/30/牛客OI赛制测试赛/index.html">
+<meta property="og:site_name" content="Empirefree">
+<meta property="og:description" content="经历太少，才会容易被诱惑  比赛链接最后一题不会唉，看的题解也看不懂，怎么看出矩阵快速幂的，QAQ">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-08-30T02:14:17.356Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="牛客OI赛制测试赛">
+<meta name="twitter:description" content="经历太少，才会容易被诱惑  比赛链接最后一题不会唉，看的题解也看不懂，怎么看出矩阵快速幂的，QAQ">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://empirefree.top/2018/08/30/牛客OI赛制测试赛/"/>
+
+
+
+
+
+  <title>牛客OI赛制测试赛 | Empirefree</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?86ad29ac36d91b4ca6bdd0867175db21";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+	<a href="https://github.com/Empirefree"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Empirefree</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">与心灵的交互，才能看出你真正所求</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-主页">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            主页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-关于">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-标签">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-分类">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-归档">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-照片">
+          <a href="/image/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-image"></i> <br />
+            
+            照片
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-帮助">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            帮助
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://empirefree.top/2018/08/30/牛客OI赛制测试赛/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Empirefree">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Empirefree">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">牛客OI赛制测试赛</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-30T09:59:56+08:00">
+                2018-08-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/2018暑假ACM训练/" itemprop="url" rel="index">
+                    <span itemprop="name">2018暑假ACM训练</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/08/30/牛客OI赛制测试赛/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/30/牛客OI赛制测试赛/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><blockquote class="blockquote-center">经历太少，才会容易被诱惑</blockquote><br>  <a href="https://www.nowcoder.com/acm/contest/181#question" target="_blank" rel="noopener">比赛链接</a>最后一题不会唉，看的题解也看不懂，怎么看出矩阵快速幂的，QAQ<br><a id="more"></a></p>
+<ul>
+<li>A题：一来想循环环，不行，矩阵快速幂，也没看出来。以后得多尝试这种题目找规律</li>
+<li>B题：这题最搞笑，我已经只要复制代码提交就可以了，结果直接wa，QAQ。</li>
+<li>C题：说实话，这题不会做，然后看题解，发现是总和要被k约掉，然后对于每个分和要能找到解，才可以，涨姿势了。</li>
+<li>D题：树上直径，和之前小白赛一模一样，最后弄个求和公式就好。（比赛没做这题唉，现在对比赛都不上心了）</li>
+<li>E题：一眼一看，LIS，一直wa32%,问了一下别人，发现不少最长上升子序列，是最长不降序列,将lower_bound改成upper_bound才过.</li>
+</ul>
+<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码A</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"></span><br><span class="line">                                                                       :;LaEaHKEEGpPXU7;,</span><br><span class="line">                                                                  .:75pKH11252U252XapZgRQgD6XJscLr;,.</span><br><span class="line">                                                               :LXpRgGaX521JLw1JswJJsJs22XHPPEZEGDOMMRDOa7.</span><br><span class="line">                                                           .r2EDDZEpZPZP6KpHX5SXH5XXa5KwaXaSX5UJ1c77sLs2GMQQ6r                                       .</span><br><span class="line">                                                        ,LpgOGpEZGZEZEpZKpHHU5wP5HEDgpXpHa2SSa5aSXULr7rrirrJXRBp;                                   ;B</span><br><span class="line">                                                     ,J6MRZH6EgEEZE6E6EZZPZXXwSSGQXr::aPpP5USUHaHaKa5Lvrr7ri;rLHBB2:                                Kc</span><br><span class="line">                                                   rpQDOpPPOGGZOGOZG6GEOEOEDPPGBa.  .PaSSUXSUUUaUSaKXKS177r7rrrirSBBR7                             .O,</span><br><span class="line">                                                :UBQOKPK6ZOOOEDEO6GZE6EpEpDgDBR:   UBpXHa5aSaUS5SUS5XapPHJc7rrv7rr7sgBBs                           .g.</span><br><span class="line">                                              ;gBMPXpO6GEOEOEOEGEOEE6EZEEDRGBB    EB5pKSXpHKaHSX552S5aUHHEX17c7vr7777s5RBS:                        .R;</span><br><span class="line">                                           .sQBPXpDZOODOgODGOGgEDEOEOGgGgOOMB:   LBKKSXSHa52aaKXHXKaa5aSaaHXSJLcL7vcc777JDBBg2;.                    Qi</span><br><span class="line">                                         ;2ggp2EDDOggGEDGgDDOgGGZDOOZOGg6gEBX    vBZaHUKaaUXXXSXXKXpXHXH5wwaa52U1wssLsLJccv1UDQBQ67.                O7</span><br><span class="line">                                       :ZZUU5PROOEOZOZGGOODZOGgODZOOgOggRgRB; ;:..R6XaKKpP6PGppKPHpHpPX5aU21UUa5Sw52UwUJJv77L77sSpQMDU;            ;B5</span><br><span class="line">                                     ,SRJ7sSHGggEOZOEG6OODpOZgggOQQBBBBBQBBQ.,;;. LBOgOgDRDDZODMgQRgRDaa552a252UUa25w5UaU2sLvccs7r7sJZBBMr       ,XQJ:</span><br><span class="line">                                    LQHr77J6RGOZDZOEGEDGgDRORQBBBQRDPU1Jscwa7.,::.:J7r;::::.  ..,:;i7UOgRRRgDPH5SUSU52U2HHa1JJJLJLccLr71RBB,    7R2,</span><br><span class="line">                                  :RZv;77JSgGOZEODEDGOEggQBBBMS7;:,:,,.,.,.:7L;:,;.:  ,: . .....       .:;rJU6GgGRggEZHPaKXX2S221Js1Lc7r:7QB. .XX:</span><br><span class="line">                                 7g1;;7rcXG6gpGDZGgZOOQBBQpr.   ::::;:;:::Jr::sr;::;:.:vs,:::::::::::,,         ,:7L5HGOggRgZUUU5wSUaJLc7r7BOiDr  ...</span><br><span class="line">                               .XX;;;irLHGKpZZZEKgDRBBB6i    ,;;:;;;;r;;:s177:,;L7:;7:.rHi,:::::::::::::::::,.         .,;7ZRQgO6KUUJsLwsJ7KBM. .....</span><br><span class="line">                               JZ:;rrrc5EPHp6XgpRBBBE;     :i:;;;;;:;;;:c7::r7;,::::::::rv:,:::::::::::,:,:,:,,,,            .;sORQRGX21wsXU:  .... .</span><br><span class="line">                              .Br;iir72EHPHZ6EgBBR7.   ..;ii:;;;;;;;;;:71r::.:7,  .::7;:;H;.::,:j::::::,:::::,,,::,,,              ,7wEDRZBMr  .......</span><br><span class="line">                              1D;:r;rwOPXPKH6BBX,   .:;:;;;:::;:;;;;;::Ls,;ss..r.  ,c77;sLU,:,:::,:::,:,:,:,,,:,,,:::.                  .:.rP:.......</span><br><span class="line">                              D2:i;rJpKHXHXgg7    .,,::::;:::::;:;:;;:;SL7sS2, :.   ::::,:U7.:::,:::,:,,,,,:,,.,,,.,:,                    ;L:. .. ...</span><br><span class="line">                             :Qc;i7LGZPa6gBM,  ...,,::::::::::::;;::;.JJ;ic:         ;:::,v1,.:::;7,,,:,:,:,,,,.:,,,,..                :2wr.  .......</span><br><span class="line">                             sRr:rrwZGgBQR7.  .,,::::::::::::::;::;:::Hr:7i          ,;;:::U: .,,,:r.,,:,:,:,,,:,,,.....             7K2:. ..........</span><br><span class="line">                             OX:irsXgQZ:.   .,,:::,,:::,::::::::;;;::r5;r7:           :;;;:7L ..,.,;:,:,:,,,:,:,,,,......        .rU6w;..............</span><br><span class="line">                            .BJ71EK5;.   .,,::,:,:,,,:,:,::::::::;:;.Ls;r7             :;:::s, ..,,,r:.:.,,,.:, .,..... .    .;s5XJr,..,.............</span><br><span class="line">                            1Mv::.     .:,:,,,,,,,:::::::,;:::;:;::..J7;c:          ,. ,rri:27  , .,:;. ,:,:,,:..,....    .rpPL;:.. ... .............</span><br><span class="line">                       ..7Ls:        .,,,:,,,:,:,:::,:,:::::,:::::: .Srrr,  .,:;;;::::..:7r;r1    .: :E:..,,:,...,,.., ..XBQ7, ................... ..</span><br><span class="line">                  ,;7v7r7:,         ,,,,:.,,,,,,:,,::,:,,.::.,:.,:, :Jrr; ,r7,:..        ,:::L:  .  .7RJ .,.:.,......,,:MBs   ..............,........</span><br><span class="line">            .:;vJs7i,              ,,,., ..,,:,,,:,,,:,:.,rs,,.:,,  ;J;c,                .,::;;     Lr.E: .,...,....:,:1Z:  .........,.,...........:,.</span><br><span class="line">   .;,,:r7J1wv;,.               ....,.:. .,.,,:,,,:,,::::,sS;.:::,  cLrr.     .       .,. .,..:    ;;  r5 ........,,:;s7. ....,.,.,...........,.,.,,.</span><br><span class="line">   ,BBs:::                   . ........,.,,,,,.:,,,:,:,,.;s7r,,,,,  cc7;         ,.,,.      .:7rrJGMPOEL1, ..... ,,:rSr, : ,.,.,.,.,.........,,,,,. ..</span><br><span class="line">     rZL.                   ....... ..,,,.,,,..,,,.,;,...7J:s: ..  .wr7,        ...    .rJpQBBBBBBBQgKP77s  ..  .,7S2,,....,....,.,.,......,,.,. .:cX2</span><br><span class="line">       ;SH7,               . . . .. .,.,.,.,,,...,..r, ::Ur;7L .   .57;.           .rPBBQBBBPws:;r::::.,:P.    .;S5;,..,...,.,.,.,.... ..,,, ..,7HSJvr</span><br><span class="line">          r7r;:             . ... ..........,...,.. 7L;,rS;;ivr .   1r:       .  .rZBBK7;.JL,::Jrs;.:;,:;J, .,;LDv..:.,...,.,.,.,...,.,,:,, ,7sKGwc77;</span><br><span class="line">             .:7L7:,            . ,r,..,.,,,...,..:iLL  7s;r;cv:    U7.         :vi;:. .. :Er:::.Ls. . ,7::::vHEi ,:,,.,,,.,.,,,,,,::::, .:1QBKJJUsssc</span><br><span class="line">                .:rvw1JsL7;,      ,;..........,.:ir :r .ELr77v:,.   Pr          ..      .  Ls    ,w.   rr.r:JPr. ::,..,,,.,,,,:,:::,:,..7XgRE52US25w1c</span><br><span class="line">                      .:;7JRQpX:   ; .........,i:  .,J ;gri;7r  :   1;                     .X:    .   ,v :aK1, ,,:.,,,.,,,,:::::,;::::cOBB6K55UXUX5XUw</span><br><span class="line">                           ;J,XQB7,:    . ...,:   .:7Z.7Zi7;r:   ,  v,                      :w:;,.,:::7LUsc:..:,:.:,,,,,:,:::::::,:;c5BBPS5wSUSUaUaUa2</span><br><span class="line">                           J7  rEBBg..,. ..... .  ,L1PLKr:,:;r;;::, :,                       :;SXsJU1XLLr....:,,,,,,::::,::::::,::LL,,rZXUJU25552aUUUU</span><br><span class="line">                           JL .:sXBB:... ., .    ,OH777;,rZRBBBQL ..r,                     ,:r7::r:,;;....:,,,,,,,,.::::;::;:::.7gL    UK2UUS1aw2wU25J</span><br><span class="line">                           U7 .r71BB;  . :.. .. :QJ;.;1pBBBBBGRBRi  i:                   .      .w7.   ..,,:,,,,,:,:,:::::::,.,2BR:   .DSaUSUUS525w5U1</span><br><span class="line">                           2r :7rJBQ7   .;. .   KL::JGBBBgE6Hp6XMQ;     .                    ... ,2s    ,,,,:::::,:::::::,,.:sQQB2    ;DHa5U52S2U25USJ</span><br><span class="line">                           a: :7;1BB2   .v,    sL;LPQgDBPH6KPQBpGBG    .                   ... ..  aP:. .. ,::,:::::,,,,.;rSgBQDa;    :gSSwSUUU525US2U</span><br><span class="line">                           5; ;;r2QBB,  .s:  :a7:PBZ2,:BEaZPKgBZOgB,                        .   ...:LEHri::,:.,,.,,,::rsXRBgGKEJi,    2GH252SUS5S11wH5</span><br><span class="line">                           U: ;:rwDBBr  .c, rB6r 167.,,RQPpEP6OpKEBc      .,                 .   : ::sS7;cKB6HHa1XOQRRQBRgEZDBH; ..  ;RZUPSSU525USSpK2</span><br><span class="line">                           s; ;::aBg,   .; .Gv,H::,,::,;BQDOGHPXpKBs      .,.                 . .,.  .r:;:6gOEBQRRRDggQgOHgMGL,    .;PEHHXaaKaPXPKPaXS</span><br><span class="line">                           s7.:,sBa     :..S,  vE::::;  7BBMgZH6pQBr             .             ,:,   ,.,r2RHSSpMZPKRRZpgggav,    ;UpEZaaaKHHUHPPaUJHGO</span><br><span class="line">                           a;.775:    .::rU.    gR:,:.   :;:BBBBQar                         .  ,,   ,.,7rggJwU6DDGMgOGgXc:,   ,rPGOpKSXSXSKUKHU1UHgOEP</span><br><span class="line">                          1i :SZJrLXpBBMRB:  .v  Ba,.       :sv:                             .        irsBUSpEEGPPpg65r:..,;sKZDZHSX5XaHU55K2wUGMRZ6Z6</span><br><span class="line">                         :K  :7asvwc2MgEQB, :gg.:iB7  .,,,:.                      ...,.   .     ..   .:iM6GEpSSXZOEs:...;spZpKKXXSX5Xa5Ja5wwKGQDEpp6OZ</span><br><span class="line">                         w; ,LXLr77sLwL5aR. gRgQgaQBi ,vJwvi,.                 .;;:;7:   .   .  ,...  rRDRJUSXpgas:,.:;U66SaHa2X5aUa552X12SgQgpZpEpGOD</span><br><span class="line">                         H: ;XJ;77rv7rJUaQ;rgaPgXXHBB;        . .              .ri:;;          ,: . :6QZEKHXpXXL:,::r1PKXaa2XSS5a5S5UJ22aOBgEpOppZOOgG</span><br><span class="line">                         iwsJsr7rsLrrLcJ2gQGXHwa1SUHBB:  . ... .                 ..,           :   1BRKpOEGp2Jr;::rsXP1Uaa2U5a5aUa5SsSpgQRZGZEEZZOOgDg</span><br><span class="line">                           ,cs5aXaP552ssLwRSHXaSS5asXBB.      . .                             .  LBBgGgZHsr;vrr;rcXpP5UUS5X5S2XS5SS1URBggpEZgDDGOGggRD</span><br><span class="line">                              ,;irrs2KgQRPJJJSUXKXSHJpBM   . . .                                ZBBOUsr;:.  ,,,rHgZPUaSaUSUSSXaUPXsSBB6ZZp6EEGOOGDEggO</span><br><span class="line">                                       ;BBQQZaSJ5J15SJDQ7                                    .iEBL:.  . .,:,:;SRQGZXPXXSHaS2UUSUSswQB6OZgG6pZZGODEOGDE</span><br><span class="line">                                      JgUri1aGEpEpXSS5LBQ,                              .rLap2Jr     ;712OO6ZggRDZXHXpKK2211LLLc7wgBa2PODRGE6OZgDgGDGD</span><br><span class="line">                                    7QB; ,Jc76DaZXOZgDPEBBX,                       :c1HEZ1c;:,.,:;cHDgQQggMZgGOZO6OEGpXsLLsJXHPOBBBc;vss5EMggZDODOgED6</span><br><span class="line">                                   LZJ::iwrrr72EPgXU5OBBBBBBBp7:               .i5P6wL;,   .:LS6DMgMgZKgEOPOGGDDGEXULvLSOBBBBBQBgDQDJ5rrr7JOQQDDZGEgDD</span><br><span class="line">                                   wp rR5,       .HQRX7r72RQBBBBBQBMEK6Uc7sc7cHOU:,     .:LHgOQg6ZOPZpZGGEDERZPwcr7LKDDaJr:.      rBX;;:r:ir1DBQMgRgDp</span><br><span class="line">                                   7D,sw:      ,   Z.      .LgBBQBBOsJaQBBBBBBXrr.  .:rwZBBQgROgDgDOERRMgROOScrLsPP5r,             7Qs,::::::rUgRgZOG6</span><br><span class="line">                                   ,Q57:r  ,:  ,r  U:         .;;   .vL7L;r:UG7.:sr;JSgQBgDEZXXUSXpHa21svr7r7s2v:.                  iQK...:,:::;LLJJws</span><br><span class="line">                                    OBHs;.  :;;,v  H:             :6X;       rpL;7pSrrr7r;::,....,,:;iirrvvvr,                       :BBPs;;:,,,,::;::</span><br><span class="line">                                    ::rPDEL:..7:c;7r              pK  .:      :KL.:r:..     ..:icsS5sr:,.                              JgGgBQDOSJss77r</span><br><span class="line">                                         :r;:::  ,                PH r,       ,;5: ,::::;7Ls7Lc7;:                                         ,:7JP17rJUs</span><br><span class="line">                                                                  .:J: :;  .,:K6BQS7:.,.,.</span><br><span class="line">                                                                    :r7Ji;r7;::;;.</span><br><span class="line">                                                                        .                                                                             **/</span><br><span class="line"></span><br><span class="line"><span class="comment">#include &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line"><span class="comment">#define FFI(a, b) for(int i = a; i &lt; b; i++)</span></span><br><span class="line"><span class="comment">#define FFJ(a, b) for(int j = a; j &lt; b; j++)</span></span><br><span class="line"><span class="comment">#define FFK(a, b) for(int k = a; k &lt; b; k++)</span></span><br><span class="line"><span class="comment">#define RR(a, b) for(int i = a; i &gt; b; i++)</span></span><br><span class="line"><span class="comment">#define ME(a, b) memset(a, b, sizeof(a))</span></span><br><span class="line"><span class="comment">#define SC(x) scanf("%d", &amp;x)</span></span><br><span class="line"><span class="comment">#define SCC(a, b) scanf("%d%d", &amp;a, &amp;b)</span></span><br><span class="line"><span class="comment">#define SCCC(a, b, c) scanf("%d%d%d", &amp;a, &amp;b, &amp;c)</span></span><br><span class="line"><span class="comment">#define PR(x) printf("%d\n", x)</span></span><br><span class="line"><span class="comment">#define PRR(a, b) printf("%d%d\n", a, b);</span></span><br><span class="line"><span class="comment">#define INF 0x3f3f3f3f</span></span><br><span class="line"><span class="comment">#define MAX 1000001</span></span><br><span class="line"><span class="comment">#define MOD 1000000007</span></span><br><span class="line"><span class="comment">#define E 2.71828182845</span></span><br><span class="line"><span class="comment">#define M 8</span></span><br><span class="line"><span class="comment">#define N 6</span></span><br><span class="line">typedef long long LL;</span><br><span class="line">const double PI = acos(-1.0);</span><br><span class="line">typedef pair&lt;int, int&gt; Author;</span><br><span class="line">inline int <span class="function"><span class="title">read</span></span>() &#123;</span><br><span class="line">    char c = getchar();int x = 0, f = 1;</span><br><span class="line">    <span class="keyword">while</span>(c &lt; <span class="string">'0'</span> || c &gt; <span class="string">'9'</span>)&#123;<span class="keyword">if</span>(c == <span class="string">'-'</span>)f = -1;c = getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span>(c &gt;= <span class="string">'0'</span> &amp;&amp; c &lt;= <span class="string">'9'</span>)&#123;x = x * 10 + c - <span class="string">'0'</span>;c = getchar();&#125;</span><br><span class="line">    <span class="built_in">return</span> x * f;</span><br><span class="line">&#125;</span><br><span class="line">/*******************************************************************************************************************************************************/</span><br><span class="line">int main(void)&#123;</span><br><span class="line">	string str;</span><br><span class="line"></span><br><span class="line">	cin&gt;&gt;str;</span><br><span class="line">	<span class="keyword">if</span>((str[str.size() - 1] - <span class="string">'0'</span>) &amp; 1) cout&lt;&lt;-1&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">else</span> cout&lt;&lt;1&lt;&lt;endl;</span><br><span class="line">	<span class="built_in">return</span> EXIT_SUCCESS;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div>
+<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码B</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()&#123;</span><br><span class="line">    long long int a, b;</span><br><span class="line"></span><br><span class="line">    cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    cout&lt;&lt;a + b&lt;&lt;endl;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div>
+<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码C</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"></span><br><span class="line">                                                                       :;LaEaHKEEGpPXU7;,</span><br><span class="line">                                                                  .:75pKH11252U252XapZgRQgD6XJscLr;,.</span><br><span class="line">                                                               :LXpRgGaX521JLw1JswJJsJs22XHPPEZEGDOMMRDOa7.</span><br><span class="line">                                                           .r2EDDZEpZPZP6KpHX5SXH5XXa5KwaXaSX5UJ1c77sLs2GMQQ6r                                       .</span><br><span class="line">                                                        ,LpgOGpEZGZEZEpZKpHHU5wP5HEDgpXpHa2SSa5aSXULr7rrirrJXRBp;                                   ;B</span><br><span class="line">                                                     ,J6MRZH6EgEEZE6E6EZZPZXXwSSGQXr::aPpP5USUHaHaKa5Lvrr7ri;rLHBB2:                                Kc</span><br><span class="line">                                                   rpQDOpPPOGGZOGOZG6GEOEOEDPPGBa.  .PaSSUXSUUUaUSaKXKS177r7rrrirSBBR7                             .O,</span><br><span class="line">                                                :UBQOKPK6ZOOOEDEO6GZE6EpEpDgDBR:   UBpXHa5aSaUS5SUS5XapPHJc7rrv7rr7sgBBs                           .g.</span><br><span class="line">                                              ;gBMPXpO6GEOEOEOEGEOEE6EZEEDRGBB    EB5pKSXpHKaHSX552S5aUHHEX17c7vr7777s5RBS:                        .R;</span><br><span class="line">                                           .sQBPXpDZOODOgODGOGgEDEOEOGgGgOOMB:   LBKKSXSHa52aaKXHXKaa5aSaaHXSJLcL7vcc777JDBBg2;.                    Qi</span><br><span class="line">                                         ;2ggp2EDDOggGEDGgDDOgGGZDOOZOGg6gEBX    vBZaHUKaaUXXXSXXKXpXHXH5wwaa52U1wssLsLJccv1UDQBQ67.                O7</span><br><span class="line">                                       :ZZUU5PROOEOZOZGGOODZOGgODZOOgOggRgRB; ;:..R6XaKKpP6PGppKPHpHpPX5aU21UUa5Sw52UwUJJv77L77sSpQMDU;            ;B5</span><br><span class="line">                                     ,SRJ7sSHGggEOZOEG6OODpOZgggOQQBBBBBQBBQ.,;;. LBOgOgDRDDZODMgQRgRDaa552a252UUa25w5UaU2sLvccs7r7sJZBBMr       ,XQJ:</span><br><span class="line">                                    LQHr77J6RGOZDZOEGEDGgDRORQBBBQRDPU1Jscwa7.,::.:J7r;::::.  ..,:;i7UOgRRRgDPH5SUSU52U2HHa1JJJLJLccLr71RBB,    7R2,</span><br><span class="line">                                  :RZv;77JSgGOZEODEDGOEggQBBBMS7;:,:,,.,.,.:7L;:,;.:  ,: . .....       .:;rJU6GgGRggEZHPaKXX2S221Js1Lc7r:7QB. .XX:</span><br><span class="line">                                 7g1;;7rcXG6gpGDZGgZOOQBBQpr.   ::::;:;:::Jr::sr;::;:.:vs,:::::::::::,,         ,:7L5HGOggRgZUUU5wSUaJLc7r7BOiDr  ...</span><br><span class="line">                               .XX;;;irLHGKpZZZEKgDRBBB6i    ,;;:;;;;r;;:s177:,;L7:;7:.rHi,:::::::::::::::::,.         .,;7ZRQgO6KUUJsLwsJ7KBM. .....</span><br><span class="line">                               JZ:;rrrc5EPHp6XgpRBBBE;     :i:;;;;;:;;;:c7::r7;,::::::::rv:,:::::::::::,:,:,:,,,,            .;sORQRGX21wsXU:  .... .</span><br><span class="line">                              .Br;iir72EHPHZ6EgBBR7.   ..;ii:;;;;;;;;;:71r::.:7,  .::7;:;H;.::,:j::::::,:::::,,,::,,,              ,7wEDRZBMr  .......</span><br><span class="line">                              1D;:r;rwOPXPKH6BBX,   .:;:;;;:::;:;;;;;::Ls,;ss..r.  ,c77;sLU,:,:::,:::,:,:,:,,,:,,,:::.                  .:.rP:.......</span><br><span class="line">                              D2:i;rJpKHXHXgg7    .,,::::;:::::;:;:;;:;SL7sS2, :.   ::::,:U7.:::,:::,:,,,,,:,,.,,,.,:,                    ;L:. .. ...</span><br><span class="line">                             :Qc;i7LGZPa6gBM,  ...,,::::::::::::;;::;.JJ;ic:         ;:::,v1,.:::;7,,,:,:,:,,,,.:,,,,..                :2wr.  .......</span><br><span class="line">                             sRr:rrwZGgBQR7.  .,,::::::::::::::;::;:::Hr:7i          ,;;:::U: .,,,:r.,,:,:,:,,,:,,,.....             7K2:. ..........</span><br><span class="line">                             OX:irsXgQZ:.   .,,:::,,:::,::::::::;;;::r5;r7:           :;;;:7L ..,.,;:,:,:,,,:,:,,,,......        .rU6w;..............</span><br><span class="line">                            .BJ71EK5;.   .,,::,:,:,,,:,:,::::::::;:;.Ls;r7             :;:::s, ..,,,r:.:.,,,.:, .,..... .    .;s5XJr,..,.............</span><br><span class="line">                            1Mv::.     .:,:,,,,,,,:::::::,;:::;:;::..J7;c:          ,. ,rri:27  , .,:;. ,:,:,,:..,....    .rpPL;:.. ... .............</span><br><span class="line">                       ..7Ls:        .,,,:,,,:,:,:::,:,:::::,:::::: .Srrr,  .,:;;;::::..:7r;r1    .: :E:..,,:,...,,.., ..XBQ7, ................... ..</span><br><span class="line">                  ,;7v7r7:,         ,,,,:.,,,,,,:,,::,:,,.::.,:.,:, :Jrr; ,r7,:..        ,:::L:  .  .7RJ .,.:.,......,,:MBs   ..............,........</span><br><span class="line">            .:;vJs7i,              ,,,., ..,,:,,,:,,,:,:.,rs,,.:,,  ;J;c,                .,::;;     Lr.E: .,...,....:,:1Z:  .........,.,...........:,.</span><br><span class="line">   .;,,:r7J1wv;,.               ....,.:. .,.,,:,,,:,,::::,sS;.:::,  cLrr.     .       .,. .,..:    ;;  r5 ........,,:;s7. ....,.,.,...........,.,.,,.</span><br><span class="line">   ,BBs:::                   . ........,.,,,,,.:,,,:,:,,.;s7r,,,,,  cc7;         ,.,,.      .:7rrJGMPOEL1, ..... ,,:rSr, : ,.,.,.,.,.........,,,,,. ..</span><br><span class="line">     rZL.                   ....... ..,,,.,,,..,,,.,;,...7J:s: ..  .wr7,        ...    .rJpQBBBBBBBQgKP77s  ..  .,7S2,,....,....,.,.,......,,.,. .:cX2</span><br><span class="line">       ;SH7,               . . . .. .,.,.,.,,,...,..r, ::Ur;7L .   .57;.           .rPBBQBBBPws:;r::::.,:P.    .;S5;,..,...,.,.,.,.... ..,,, ..,7HSJvr</span><br><span class="line">          r7r;:             . ... ..........,...,.. 7L;,rS;;ivr .   1r:       .  .rZBBK7;.JL,::Jrs;.:;,:;J, .,;LDv..:.,...,.,.,.,...,.,,:,, ,7sKGwc77;</span><br><span class="line">             .:7L7:,            . ,r,..,.,,,...,..:iLL  7s;r;cv:    U7.         :vi;:. .. :Er:::.Ls. . ,7::::vHEi ,:,,.,,,.,.,,,,,,::::, .:1QBKJJUsssc</span><br><span class="line">                .:rvw1JsL7;,      ,;..........,.:ir :r .ELr77v:,.   Pr          ..      .  Ls    ,w.   rr.r:JPr. ::,..,,,.,,,,:,:::,:,..7XgRE52US25w1c</span><br><span class="line">                      .:;7JRQpX:   ; .........,i:  .,J ;gri;7r  :   1;                     .X:    .   ,v :aK1, ,,:.,,,.,,,,:::::,;::::cOBB6K55UXUX5XUw</span><br><span class="line">                           ;J,XQB7,:    . ...,:   .:7Z.7Zi7;r:   ,  v,                      :w:;,.,:::7LUsc:..:,:.:,,,,,:,:::::::,:;c5BBPS5wSUSUaUaUa2</span><br><span class="line">                           J7  rEBBg..,. ..... .  ,L1PLKr:,:;r;;::, :,                       :;SXsJU1XLLr....:,,,,,,::::,::::::,::LL,,rZXUJU25552aUUUU</span><br><span class="line">                           JL .:sXBB:... ., .    ,OH777;,rZRBBBQL ..r,                     ,:r7::r:,;;....:,,,,,,,,.::::;::;:::.7gL    UK2UUS1aw2wU25J</span><br><span class="line">                           U7 .r71BB;  . :.. .. :QJ;.;1pBBBBBGRBRi  i:                   .      .w7.   ..,,:,,,,,:,:,:::::::,.,2BR:   .DSaUSUUS525w5U1</span><br><span class="line">                           2r :7rJBQ7   .;. .   KL::JGBBBgE6Hp6XMQ;     .                    ... ,2s    ,,,,:::::,:::::::,,.:sQQB2    ;DHa5U52S2U25USJ</span><br><span class="line">                           a: :7;1BB2   .v,    sL;LPQgDBPH6KPQBpGBG    .                   ... ..  aP:. .. ,::,:::::,,,,.;rSgBQDa;    :gSSwSUUU525US2U</span><br><span class="line">                           5; ;;r2QBB,  .s:  :a7:PBZ2,:BEaZPKgBZOgB,                        .   ...:LEHri::,:.,,.,,,::rsXRBgGKEJi,    2GH252SUS5S11wH5</span><br><span class="line">                           U: ;:rwDBBr  .c, rB6r 167.,,RQPpEP6OpKEBc      .,                 .   : ::sS7;cKB6HHa1XOQRRQBRgEZDBH; ..  ;RZUPSSU525USSpK2</span><br><span class="line">                           s; ;::aBg,   .; .Gv,H::,,::,;BQDOGHPXpKBs      .,.                 . .,.  .r:;:6gOEBQRRRDggQgOHgMGL,    .;PEHHXaaKaPXPKPaXS</span><br><span class="line">                           s7.:,sBa     :..S,  vE::::;  7BBMgZH6pQBr             .             ,:,   ,.,r2RHSSpMZPKRRZpgggav,    ;UpEZaaaKHHUHPPaUJHGO</span><br><span class="line">                           a;.775:    .::rU.    gR:,:.   :;:BBBBQar                         .  ,,   ,.,7rggJwU6DDGMgOGgXc:,   ,rPGOpKSXSXSKUKHU1UHgOEP</span><br><span class="line">                          1i :SZJrLXpBBMRB:  .v  Ba,.       :sv:                             .        irsBUSpEEGPPpg65r:..,;sKZDZHSX5XaHU55K2wUGMRZ6Z6</span><br><span class="line">                         :K  :7asvwc2MgEQB, :gg.:iB7  .,,,:.                      ...,.   .     ..   .:iM6GEpSSXZOEs:...;spZpKKXXSX5Xa5Ja5wwKGQDEpp6OZ</span><br><span class="line">                         w; ,LXLr77sLwL5aR. gRgQgaQBi ,vJwvi,.                 .;;:;7:   .   .  ,...  rRDRJUSXpgas:,.:;U66SaHa2X5aUa552X12SgQgpZpEpGOD</span><br><span class="line">                         H: ;XJ;77rv7rJUaQ;rgaPgXXHBB;        . .              .ri:;;          ,: . :6QZEKHXpXXL:,::r1PKXaa2XSS5a5S5UJ22aOBgEpOppZOOgG</span><br><span class="line">                         iwsJsr7rsLrrLcJ2gQGXHwa1SUHBB:  . ... .                 ..,           :   1BRKpOEGp2Jr;::rsXP1Uaa2U5a5aUa5SsSpgQRZGZEEZZOOgDg</span><br><span class="line">                           ,cs5aXaP552ssLwRSHXaSS5asXBB.      . .                             .  LBBgGgZHsr;vrr;rcXpP5UUS5X5S2XS5SS1URBggpEZgDDGOGggRD</span><br><span class="line">                              ,;irrs2KgQRPJJJSUXKXSHJpBM   . . .                                ZBBOUsr;:.  ,,,rHgZPUaSaUSUSSXaUPXsSBB6ZZp6EEGOOGDEggO</span><br><span class="line">                                       ;BBQQZaSJ5J15SJDQ7                                    .iEBL:.  . .,:,:;SRQGZXPXXSHaS2UUSUSswQB6OZgG6pZZGODEOGDE</span><br><span class="line">                                      JgUri1aGEpEpXSS5LBQ,                              .rLap2Jr     ;712OO6ZggRDZXHXpKK2211LLLc7wgBa2PODRGE6OZgDgGDGD</span><br><span class="line">                                    7QB; ,Jc76DaZXOZgDPEBBX,                       :c1HEZ1c;:,.,:;cHDgQQggMZgGOZO6OEGpXsLLsJXHPOBBBc;vss5EMggZDODOgED6</span><br><span class="line">                                   LZJ::iwrrr72EPgXU5OBBBBBBBp7:               .i5P6wL;,   .:LS6DMgMgZKgEOPOGGDDGEXULvLSOBBBBBQBgDQDJ5rrr7JOQQDDZGEgDD</span><br><span class="line">                                   wp rR5,       .HQRX7r72RQBBBBBQBMEK6Uc7sc7cHOU:,     .:LHgOQg6ZOPZpZGGEDERZPwcr7LKDDaJr:.      rBX;;:r:ir1DBQMgRgDp</span><br><span class="line">                                   7D,sw:      ,   Z.      .LgBBQBBOsJaQBBBBBBXrr.  .:rwZBBQgROgDgDOERRMgROOScrLsPP5r,             7Qs,::::::rUgRgZOG6</span><br><span class="line">                                   ,Q57:r  ,:  ,r  U:         .;;   .vL7L;r:UG7.:sr;JSgQBgDEZXXUSXpHa21svr7r7s2v:.                  iQK...:,:::;LLJJws</span><br><span class="line">                                    OBHs;.  :;;,v  H:             :6X;       rpL;7pSrrr7r;::,....,,:;iirrvvvr,                       :BBPs;;:,,,,::;::</span><br><span class="line">                                    ::rPDEL:..7:c;7r              pK  .:      :KL.:r:..     ..:icsS5sr:,.                              JgGgBQDOSJss77r</span><br><span class="line">                                         :r;:::  ,                PH r,       ,;5: ,::::;7Ls7Lc7;:                                         ,:7JP17rJUs</span><br><span class="line">                                                                  .:J: :;  .,:K6BQS7:.,.,.</span><br><span class="line">                                                                    :r7Ji;r7;::;;.</span><br><span class="line">                                                                        .                                                                             **/</span><br><span class="line"></span><br><span class="line"><span class="comment">#include &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line"><span class="comment">#define FFI(a, b) for(int i = a; i &lt; b; i++)</span></span><br><span class="line"><span class="comment">#define FFJ(a, b) for(int j = a; j &lt; b; j++)</span></span><br><span class="line"><span class="comment">#define FFK(a, b) for(int k = a; k &lt; b; k++)</span></span><br><span class="line"><span class="comment">#define RR(a, b) for(int i = a; i &gt; b; i++)</span></span><br><span class="line"><span class="comment">#define ME(a, b) memset(a, b, sizeof(a))</span></span><br><span class="line"><span class="comment">#define SC(x) scanf("%d", &amp;x)</span></span><br><span class="line"><span class="comment">#define SCC(a, b) scanf("%d%d", &amp;a, &amp;b)</span></span><br><span class="line"><span class="comment">#define SCCC(a, b, c) scanf("%d%d%d", &amp;a, &amp;b, &amp;c)</span></span><br><span class="line"><span class="comment">#define PR(x) printf("%d\n", x)</span></span><br><span class="line"><span class="comment">#define PRR(a, b) printf("%d%d\n", a, b);</span></span><br><span class="line"><span class="comment">#define INF 0x3f3f3f3f</span></span><br><span class="line"><span class="comment">#define MAX 1000001</span></span><br><span class="line"><span class="comment">#define MOD 1000000007</span></span><br><span class="line"><span class="comment">#define E 2.71828182845</span></span><br><span class="line"><span class="comment">#define M 8</span></span><br><span class="line"><span class="comment">#define N 6</span></span><br><span class="line">typedef long long LL;</span><br><span class="line">const double PI = acos(-1.0);</span><br><span class="line">typedef pair&lt;int, int&gt; Author;</span><br><span class="line">inline int <span class="function"><span class="title">read</span></span>() &#123;</span><br><span class="line">    char c = getchar();int x = 0, f = 1;</span><br><span class="line">    <span class="keyword">while</span>(c &lt; <span class="string">'0'</span> || c &gt; <span class="string">'9'</span>)&#123;<span class="keyword">if</span>(c == <span class="string">'-'</span>)f = -1;c = getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span>(c &gt;= <span class="string">'0'</span> &amp;&amp; c &lt;= <span class="string">'9'</span>)&#123;x = x * 10 + c - <span class="string">'0'</span>;c = getchar();&#125;</span><br><span class="line">    <span class="built_in">return</span> x * f;</span><br><span class="line">&#125;</span><br><span class="line">/*******************************************************************************************************************************************************/</span><br><span class="line"><span class="built_in">set</span>&lt;LL&gt; s;</span><br><span class="line">bool Check(int sum, int k)&#123;</span><br><span class="line">	LL temp = sum / k;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span>(1)&#123;</span><br><span class="line">		<span class="keyword">if</span>(s.find(temp) == s.end()) <span class="built_in">return</span> 0;</span><br><span class="line">		<span class="keyword">if</span>(temp == sum) <span class="built_in">return</span> 1;</span><br><span class="line">		temp += sum / k;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">int main(void)&#123;</span><br><span class="line">	ios::sync_with_stdio(<span class="literal">false</span>);cin.tie(0);cout.tie(0);</span><br><span class="line">	LL sum, n, a, q;</span><br><span class="line"></span><br><span class="line">	scanf(<span class="string">"%lld%lld"</span>, &amp;n, &amp;q);sum = 0;</span><br><span class="line">	FFI(0, n)&#123;</span><br><span class="line">		scanf(<span class="string">"%lld"</span>, &amp;a);</span><br><span class="line">		sum += a;</span><br><span class="line">		s.insert(sum);</span><br><span class="line">	&#125;</span><br><span class="line">	FFI(0, q)&#123;</span><br><span class="line">		scanf(<span class="string">"%lld"</span>, &amp;a);</span><br><span class="line">		<span class="keyword">if</span>(sum % a)&#123;puts(<span class="string">"No"</span>);<span class="built_in">continue</span>;&#125;</span><br><span class="line">		<span class="keyword">if</span>(Check(sum, a)) puts(<span class="string">"Yes"</span>);</span><br><span class="line">		<span class="keyword">else</span> puts(<span class="string">"No"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div>
+<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码D</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"></span><br><span class="line">                                                                       :;LaEaHKEEGpPXU7;,</span><br><span class="line">                                                                  .:75pKH11252U252XapZgRQgD6XJscLr;,.</span><br><span class="line">                                                               :LXpRgGaX521JLw1JswJJsJs22XHPPEZEGDOMMRDOa7.</span><br><span class="line">                                                           .r2EDDZEpZPZP6KpHX5SXH5XXa5KwaXaSX5UJ1c77sLs2GMQQ6r                                       .</span><br><span class="line">                                                        ,LpgOGpEZGZEZEpZKpHHU5wP5HEDgpXpHa2SSa5aSXULr7rrirrJXRBp;                                   ;B</span><br><span class="line">                                                     ,J6MRZH6EgEEZE6E6EZZPZXXwSSGQXr::aPpP5USUHaHaKa5Lvrr7ri;rLHBB2:                                Kc</span><br><span class="line">                                                   rpQDOpPPOGGZOGOZG6GEOEOEDPPGBa.  .PaSSUXSUUUaUSaKXKS177r7rrrirSBBR7                             .O,</span><br><span class="line">                                                :UBQOKPK6ZOOOEDEO6GZE6EpEpDgDBR:   UBpXHa5aSaUS5SUS5XapPHJc7rrv7rr7sgBBs                           .g.</span><br><span class="line">                                              ;gBMPXpO6GEOEOEOEGEOEE6EZEEDRGBB    EB5pKSXpHKaHSX552S5aUHHEX17c7vr7777s5RBS:                        .R;</span><br><span class="line">                                           .sQBPXpDZOODOgODGOGgEDEOEOGgGgOOMB:   LBKKSXSHa52aaKXHXKaa5aSaaHXSJLcL7vcc777JDBBg2;.                    Qi</span><br><span class="line">                                         ;2ggp2EDDOggGEDGgDDOgGGZDOOZOGg6gEBX    vBZaHUKaaUXXXSXXKXpXHXH5wwaa52U1wssLsLJccv1UDQBQ67.                O7</span><br><span class="line">                                       :ZZUU5PROOEOZOZGGOODZOGgODZOOgOggRgRB; ;:..R6XaKKpP6PGppKPHpHpPX5aU21UUa5Sw52UwUJJv77L77sSpQMDU;            ;B5</span><br><span class="line">                                     ,SRJ7sSHGggEOZOEG6OODpOZgggOQQBBBBBQBBQ.,;;. LBOgOgDRDDZODMgQRgRDaa552a252UUa25w5UaU2sLvccs7r7sJZBBMr       ,XQJ:</span><br><span class="line">                                    LQHr77J6RGOZDZOEGEDGgDRORQBBBQRDPU1Jscwa7.,::.:J7r;::::.  ..,:;i7UOgRRRgDPH5SUSU52U2HHa1JJJLJLccLr71RBB,    7R2,</span><br><span class="line">                                  :RZv;77JSgGOZEODEDGOEggQBBBMS7;:,:,,.,.,.:7L;:,;.:  ,: . .....       .:;rJU6GgGRggEZHPaKXX2S221Js1Lc7r:7QB. .XX:</span><br><span class="line">                                 7g1;;7rcXG6gpGDZGgZOOQBBQpr.   ::::;:;:::Jr::sr;::;:.:vs,:::::::::::,,         ,:7L5HGOggRgZUUU5wSUaJLc7r7BOiDr  ...</span><br><span class="line">                               .XX;;;irLHGKpZZZEKgDRBBB6i    ,;;:;;;;r;;:s177:,;L7:;7:.rHi,:::::::::::::::::,.         .,;7ZRQgO6KUUJsLwsJ7KBM. .....</span><br><span class="line">                               JZ:;rrrc5EPHp6XgpRBBBE;     :i:;;;;;:;;;:c7::r7;,::::::::rv:,:::::::::::,:,:,:,,,,            .;sORQRGX21wsXU:  .... .</span><br><span class="line">                              .Br;iir72EHPHZ6EgBBR7.   ..;ii:;;;;;;;;;:71r::.:7,  .::7;:;H;.::,:j::::::,:::::,,,::,,,              ,7wEDRZBMr  .......</span><br><span class="line">                              1D;:r;rwOPXPKH6BBX,   .:;:;;;:::;:;;;;;::Ls,;ss..r.  ,c77;sLU,:,:::,:::,:,:,:,,,:,,,:::.                  .:.rP:.......</span><br><span class="line">                              D2:i;rJpKHXHXgg7    .,,::::;:::::;:;:;;:;SL7sS2, :.   ::::,:U7.:::,:::,:,,,,,:,,.,,,.,:,                    ;L:. .. ...</span><br><span class="line">                             :Qc;i7LGZPa6gBM,  ...,,::::::::::::;;::;.JJ;ic:         ;:::,v1,.:::;7,,,:,:,:,,,,.:,,,,..                :2wr.  .......</span><br><span class="line">                             sRr:rrwZGgBQR7.  .,,::::::::::::::;::;:::Hr:7i          ,;;:::U: .,,,:r.,,:,:,:,,,:,,,.....             7K2:. ..........</span><br><span class="line">                             OX:irsXgQZ:.   .,,:::,,:::,::::::::;;;::r5;r7:           :;;;:7L ..,.,;:,:,:,,,:,:,,,,......        .rU6w;..............</span><br><span class="line">                            .BJ71EK5;.   .,,::,:,:,,,:,:,::::::::;:;.Ls;r7             :;:::s, ..,,,r:.:.,,,.:, .,..... .    .;s5XJr,..,.............</span><br><span class="line">                            1Mv::.     .:,:,,,,,,,:::::::,;:::;:;::..J7;c:          ,. ,rri:27  , .,:;. ,:,:,,:..,....    .rpPL;:.. ... .............</span><br><span class="line">                       ..7Ls:        .,,,:,,,:,:,:::,:,:::::,:::::: .Srrr,  .,:;;;::::..:7r;r1    .: :E:..,,:,...,,.., ..XBQ7, ................... ..</span><br><span class="line">                  ,;7v7r7:,         ,,,,:.,,,,,,:,,::,:,,.::.,:.,:, :Jrr; ,r7,:..        ,:::L:  .  .7RJ .,.:.,......,,:MBs   ..............,........</span><br><span class="line">            .:;vJs7i,              ,,,., ..,,:,,,:,,,:,:.,rs,,.:,,  ;J;c,                .,::;;     Lr.E: .,...,....:,:1Z:  .........,.,...........:,.</span><br><span class="line">   .;,,:r7J1wv;,.               ....,.:. .,.,,:,,,:,,::::,sS;.:::,  cLrr.     .       .,. .,..:    ;;  r5 ........,,:;s7. ....,.,.,...........,.,.,,.</span><br><span class="line">   ,BBs:::                   . ........,.,,,,,.:,,,:,:,,.;s7r,,,,,  cc7;         ,.,,.      .:7rrJGMPOEL1, ..... ,,:rSr, : ,.,.,.,.,.........,,,,,. ..</span><br><span class="line">     rZL.                   ....... ..,,,.,,,..,,,.,;,...7J:s: ..  .wr7,        ...    .rJpQBBBBBBBQgKP77s  ..  .,7S2,,....,....,.,.,......,,.,. .:cX2</span><br><span class="line">       ;SH7,               . . . .. .,.,.,.,,,...,..r, ::Ur;7L .   .57;.           .rPBBQBBBPws:;r::::.,:P.    .;S5;,..,...,.,.,.,.... ..,,, ..,7HSJvr</span><br><span class="line">          r7r;:             . ... ..........,...,.. 7L;,rS;;ivr .   1r:       .  .rZBBK7;.JL,::Jrs;.:;,:;J, .,;LDv..:.,...,.,.,.,...,.,,:,, ,7sKGwc77;</span><br><span class="line">             .:7L7:,            . ,r,..,.,,,...,..:iLL  7s;r;cv:    U7.         :vi;:. .. :Er:::.Ls. . ,7::::vHEi ,:,,.,,,.,.,,,,,,::::, .:1QBKJJUsssc</span><br><span class="line">                .:rvw1JsL7;,      ,;..........,.:ir :r .ELr77v:,.   Pr          ..      .  Ls    ,w.   rr.r:JPr. ::,..,,,.,,,,:,:::,:,..7XgRE52US25w1c</span><br><span class="line">                      .:;7JRQpX:   ; .........,i:  .,J ;gri;7r  :   1;                     .X:    .   ,v :aK1, ,,:.,,,.,,,,:::::,;::::cOBB6K55UXUX5XUw</span><br><span class="line">                           ;J,XQB7,:    . ...,:   .:7Z.7Zi7;r:   ,  v,                      :w:;,.,:::7LUsc:..:,:.:,,,,,:,:::::::,:;c5BBPS5wSUSUaUaUa2</span><br><span class="line">                           J7  rEBBg..,. ..... .  ,L1PLKr:,:;r;;::, :,                       :;SXsJU1XLLr....:,,,,,,::::,::::::,::LL,,rZXUJU25552aUUUU</span><br><span class="line">                           JL .:sXBB:... ., .    ,OH777;,rZRBBBQL ..r,                     ,:r7::r:,;;....:,,,,,,,,.::::;::;:::.7gL    UK2UUS1aw2wU25J</span><br><span class="line">                           U7 .r71BB;  . :.. .. :QJ;.;1pBBBBBGRBRi  i:                   .      .w7.   ..,,:,,,,,:,:,:::::::,.,2BR:   .DSaUSUUS525w5U1</span><br><span class="line">                           2r :7rJBQ7   .;. .   KL::JGBBBgE6Hp6XMQ;     .                    ... ,2s    ,,,,:::::,:::::::,,.:sQQB2    ;DHa5U52S2U25USJ</span><br><span class="line">                           a: :7;1BB2   .v,    sL;LPQgDBPH6KPQBpGBG    .                   ... ..  aP:. .. ,::,:::::,,,,.;rSgBQDa;    :gSSwSUUU525US2U</span><br><span class="line">                           5; ;;r2QBB,  .s:  :a7:PBZ2,:BEaZPKgBZOgB,                        .   ...:LEHri::,:.,,.,,,::rsXRBgGKEJi,    2GH252SUS5S11wH5</span><br><span class="line">                           U: ;:rwDBBr  .c, rB6r 167.,,RQPpEP6OpKEBc      .,                 .   : ::sS7;cKB6HHa1XOQRRQBRgEZDBH; ..  ;RZUPSSU525USSpK2</span><br><span class="line">                           s; ;::aBg,   .; .Gv,H::,,::,;BQDOGHPXpKBs      .,.                 . .,.  .r:;:6gOEBQRRRDggQgOHgMGL,    .;PEHHXaaKaPXPKPaXS</span><br><span class="line">                           s7.:,sBa     :..S,  vE::::;  7BBMgZH6pQBr             .             ,:,   ,.,r2RHSSpMZPKRRZpgggav,    ;UpEZaaaKHHUHPPaUJHGO</span><br><span class="line">                           a;.775:    .::rU.    gR:,:.   :;:BBBBQar                         .  ,,   ,.,7rggJwU6DDGMgOGgXc:,   ,rPGOpKSXSXSKUKHU1UHgOEP</span><br><span class="line">                          1i :SZJrLXpBBMRB:  .v  Ba,.       :sv:                             .        irsBUSpEEGPPpg65r:..,;sKZDZHSX5XaHU55K2wUGMRZ6Z6</span><br><span class="line">                         :K  :7asvwc2MgEQB, :gg.:iB7  .,,,:.                      ...,.   .     ..   .:iM6GEpSSXZOEs:...;spZpKKXXSX5Xa5Ja5wwKGQDEpp6OZ</span><br><span class="line">                         w; ,LXLr77sLwL5aR. gRgQgaQBi ,vJwvi,.                 .;;:;7:   .   .  ,...  rRDRJUSXpgas:,.:;U66SaHa2X5aUa552X12SgQgpZpEpGOD</span><br><span class="line">                         H: ;XJ;77rv7rJUaQ;rgaPgXXHBB;        . .              .ri:;;          ,: . :6QZEKHXpXXL:,::r1PKXaa2XSS5a5S5UJ22aOBgEpOppZOOgG</span><br><span class="line">                         iwsJsr7rsLrrLcJ2gQGXHwa1SUHBB:  . ... .                 ..,           :   1BRKpOEGp2Jr;::rsXP1Uaa2U5a5aUa5SsSpgQRZGZEEZZOOgDg</span><br><span class="line">                           ,cs5aXaP552ssLwRSHXaSS5asXBB.      . .                             .  LBBgGgZHsr;vrr;rcXpP5UUS5X5S2XS5SS1URBggpEZgDDGOGggRD</span><br><span class="line">                              ,;irrs2KgQRPJJJSUXKXSHJpBM   . . .                                ZBBOUsr;:.  ,,,rHgZPUaSaUSUSSXaUPXsSBB6ZZp6EEGOOGDEggO</span><br><span class="line">                                       ;BBQQZaSJ5J15SJDQ7                                    .iEBL:.  . .,:,:;SRQGZXPXXSHaS2UUSUSswQB6OZgG6pZZGODEOGDE</span><br><span class="line">                                      JgUri1aGEpEpXSS5LBQ,                              .rLap2Jr     ;712OO6ZggRDZXHXpKK2211LLLc7wgBa2PODRGE6OZgDgGDGD</span><br><span class="line">                                    7QB; ,Jc76DaZXOZgDPEBBX,                       :c1HEZ1c;:,.,:;cHDgQQggMZgGOZO6OEGpXsLLsJXHPOBBBc;vss5EMggZDODOgED6</span><br><span class="line">                                   LZJ::iwrrr72EPgXU5OBBBBBBBp7:               .i5P6wL;,   .:LS6DMgMgZKgEOPOGGDDGEXULvLSOBBBBBQBgDQDJ5rrr7JOQQDDZGEgDD</span><br><span class="line">                                   wp rR5,       .HQRX7r72RQBBBBBQBMEK6Uc7sc7cHOU:,     .:LHgOQg6ZOPZpZGGEDERZPwcr7LKDDaJr:.      rBX;;:r:ir1DBQMgRgDp</span><br><span class="line">                                   7D,sw:      ,   Z.      .LgBBQBBOsJaQBBBBBBXrr.  .:rwZBBQgROgDgDOERRMgROOScrLsPP5r,             7Qs,::::::rUgRgZOG6</span><br><span class="line">                                   ,Q57:r  ,:  ,r  U:         .;;   .vL7L;r:UG7.:sr;JSgQBgDEZXXUSXpHa21svr7r7s2v:.                  iQK...:,:::;LLJJws</span><br><span class="line">                                    OBHs;.  :;;,v  H:             :6X;       rpL;7pSrrr7r;::,....,,:;iirrvvvr,                       :BBPs;;:,,,,::;::</span><br><span class="line">                                    ::rPDEL:..7:c;7r              pK  .:      :KL.:r:..     ..:icsS5sr:,.                              JgGgBQDOSJss77r</span><br><span class="line">                                         :r;:::  ,                PH r,       ,;5: ,::::;7Ls7Lc7;:                                         ,:7JP17rJUs</span><br><span class="line">                                                                  .:J: :;  .,:K6BQS7:.,.,.</span><br><span class="line">                                                                    :r7Ji;r7;::;;.</span><br><span class="line">                                                                        .                                                                             **/</span><br><span class="line"></span><br><span class="line"><span class="comment">#include &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line"><span class="comment">#define FFI(a, b) for(int i = a; i &lt; b; i++)</span></span><br><span class="line"><span class="comment">#define FFJ(a, b) for(int j = a; j &lt; b; j++)</span></span><br><span class="line"><span class="comment">#define FFK(a, b) for(int k = a; k &lt; b; k++)</span></span><br><span class="line"><span class="comment">#define RR(a, b) for(int i = a; i &gt; b; i++)</span></span><br><span class="line"><span class="comment">#define ME(a, b) memset(a, b, sizeof(a))</span></span><br><span class="line"><span class="comment">#define SC(x) scanf("%d", &amp;x)</span></span><br><span class="line"><span class="comment">#define SCC(a, b) scanf("%d%d", &amp;a, &amp;b)</span></span><br><span class="line"><span class="comment">#define SCCC(a, b, c) scanf("%d%d%d", &amp;a, &amp;b, &amp;c)</span></span><br><span class="line"><span class="comment">#define PR(x) printf("%d\n", x)</span></span><br><span class="line"><span class="comment">#define PRR(a, b) printf("%d%d\n", a, b);</span></span><br><span class="line"><span class="comment">#define INF 0x3f3f3f3f</span></span><br><span class="line"><span class="comment">#define MAX 30000</span></span><br><span class="line"><span class="comment">#define MOD 1000000007</span></span><br><span class="line"><span class="comment">#define E 2.71828182845</span></span><br><span class="line"><span class="comment">#define M 8</span></span><br><span class="line"><span class="comment">#define N 6</span></span><br><span class="line">typedef long long LL;</span><br><span class="line">const double PI = acos(-1.0);</span><br><span class="line">typedef pair&lt;int, int&gt; Author;</span><br><span class="line">inline int <span class="function"><span class="title">read</span></span>() &#123;</span><br><span class="line">    char c = getchar();int x = 0, f = 1;</span><br><span class="line">    <span class="keyword">while</span>(c &lt; <span class="string">'0'</span> || c &gt; <span class="string">'9'</span>)&#123;<span class="keyword">if</span>(c == <span class="string">'-'</span>)f = -1;c = getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span>(c &gt;= <span class="string">'0'</span> &amp;&amp; c &lt;= <span class="string">'9'</span>)&#123;x = x * 10 + c - <span class="string">'0'</span>;c = getchar();&#125;</span><br><span class="line">    <span class="built_in">return</span> x * f;</span><br><span class="line">&#125;</span><br><span class="line">/*******************************************************************************************************************************************************/</span><br><span class="line">vector&lt;Author&gt; v[MAX];</span><br><span class="line">int dis[MAX], ind;LL ans;</span><br><span class="line">void DFS(int id, int sum)&#123;</span><br><span class="line">	int len = v[id].size();</span><br><span class="line">	<span class="keyword">if</span>(sum &gt; ans)&#123;</span><br><span class="line">		ans = sum;</span><br><span class="line">		ind = id;</span><br><span class="line">	&#125;</span><br><span class="line">	dis[id] = 1;</span><br><span class="line">	FFI(0, len) <span class="keyword">if</span>(!dis[v[id][i].first]) DFS(v[id][i].first, sum + v[id][i].second);</span><br><span class="line">&#125;</span><br><span class="line">int main(void)&#123;</span><br><span class="line">	int n, p, q, d;</span><br><span class="line"></span><br><span class="line">	SC(n);</span><br><span class="line">	FFI(1, n)&#123;</span><br><span class="line">		SCCC(p, q, d);</span><br><span class="line">		v[p].push_back(make_pair(q, d));</span><br><span class="line">		v[q].push_back(make_pair(p, d));</span><br><span class="line">	&#125;</span><br><span class="line">	ME(dis, 0);ans = ind = 0;</span><br><span class="line"> 	DFS(1, 0);</span><br><span class="line"> 	ME(dis, 0);ans = 0;</span><br><span class="line"> 	DFS(ind, 0);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, (21 + ans) * ans / 2);</span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div>
+<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码E</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"></span><br><span class="line">                                                                       :;LaEaHKEEGpPXU7;,</span><br><span class="line">                                                                  .:75pKH11252U252XapZgRQgD6XJscLr;,.</span><br><span class="line">                                                               :LXpRgGaX521JLw1JswJJsJs22XHPPEZEGDOMMRDOa7.</span><br><span class="line">                                                           .r2EDDZEpZPZP6KpHX5SXH5XXa5KwaXaSX5UJ1c77sLs2GMQQ6r                                       .</span><br><span class="line">                                                        ,LpgOGpEZGZEZEpZKpHHU5wP5HEDgpXpHa2SSa5aSXULr7rrirrJXRBp;                                   ;B</span><br><span class="line">                                                     ,J6MRZH6EgEEZE6E6EZZPZXXwSSGQXr::aPpP5USUHaHaKa5Lvrr7ri;rLHBB2:                                Kc</span><br><span class="line">                                                   rpQDOpPPOGGZOGOZG6GEOEOEDPPGBa.  .PaSSUXSUUUaUSaKXKS177r7rrrirSBBR7                             .O,</span><br><span class="line">                                                :UBQOKPK6ZOOOEDEO6GZE6EpEpDgDBR:   UBpXHa5aSaUS5SUS5XapPHJc7rrv7rr7sgBBs                           .g.</span><br><span class="line">                                              ;gBMPXpO6GEOEOEOEGEOEE6EZEEDRGBB    EB5pKSXpHKaHSX552S5aUHHEX17c7vr7777s5RBS:                        .R;</span><br><span class="line">                                           .sQBPXpDZOODOgODGOGgEDEOEOGgGgOOMB:   LBKKSXSHa52aaKXHXKaa5aSaaHXSJLcL7vcc777JDBBg2;.                    Qi</span><br><span class="line">                                         ;2ggp2EDDOggGEDGgDDOgGGZDOOZOGg6gEBX    vBZaHUKaaUXXXSXXKXpXHXH5wwaa52U1wssLsLJccv1UDQBQ67.                O7</span><br><span class="line">                                       :ZZUU5PROOEOZOZGGOODZOGgODZOOgOggRgRB; ;:..R6XaKKpP6PGppKPHpHpPX5aU21UUa5Sw52UwUJJv77L77sSpQMDU;            ;B5</span><br><span class="line">                                     ,SRJ7sSHGggEOZOEG6OODpOZgggOQQBBBBBQBBQ.,;;. LBOgOgDRDDZODMgQRgRDaa552a252UUa25w5UaU2sLvccs7r7sJZBBMr       ,XQJ:</span><br><span class="line">                                    LQHr77J6RGOZDZOEGEDGgDRORQBBBQRDPU1Jscwa7.,::.:J7r;::::.  ..,:;i7UOgRRRgDPH5SUSU52U2HHa1JJJLJLccLr71RBB,    7R2,</span><br><span class="line">                                  :RZv;77JSgGOZEODEDGOEggQBBBMS7;:,:,,.,.,.:7L;:,;.:  ,: . .....       .:;rJU6GgGRggEZHPaKXX2S221Js1Lc7r:7QB. .XX:</span><br><span class="line">                                 7g1;;7rcXG6gpGDZGgZOOQBBQpr.   ::::;:;:::Jr::sr;::;:.:vs,:::::::::::,,         ,:7L5HGOggRgZUUU5wSUaJLc7r7BOiDr  ...</span><br><span class="line">                               .XX;;;irLHGKpZZZEKgDRBBB6i    ,;;:;;;;r;;:s177:,;L7:;7:.rHi,:::::::::::::::::,.         .,;7ZRQgO6KUUJsLwsJ7KBM. .....</span><br><span class="line">                               JZ:;rrrc5EPHp6XgpRBBBE;     :i:;;;;;:;;;:c7::r7;,::::::::rv:,:::::::::::,:,:,:,,,,            .;sORQRGX21wsXU:  .... .</span><br><span class="line">                              .Br;iir72EHPHZ6EgBBR7.   ..;ii:;;;;;;;;;:71r::.:7,  .::7;:;H;.::,:j::::::,:::::,,,::,,,              ,7wEDRZBMr  .......</span><br><span class="line">                              1D;:r;rwOPXPKH6BBX,   .:;:;;;:::;:;;;;;::Ls,;ss..r.  ,c77;sLU,:,:::,:::,:,:,:,,,:,,,:::.                  .:.rP:.......</span><br><span class="line">                              D2:i;rJpKHXHXgg7    .,,::::;:::::;:;:;;:;SL7sS2, :.   ::::,:U7.:::,:::,:,,,,,:,,.,,,.,:,                    ;L:. .. ...</span><br><span class="line">                             :Qc;i7LGZPa6gBM,  ...,,::::::::::::;;::;.JJ;ic:         ;:::,v1,.:::;7,,,:,:,:,,,,.:,,,,..                :2wr.  .......</span><br><span class="line">                             sRr:rrwZGgBQR7.  .,,::::::::::::::;::;:::Hr:7i          ,;;:::U: .,,,:r.,,:,:,:,,,:,,,.....             7K2:. ..........</span><br><span class="line">                             OX:irsXgQZ:.   .,,:::,,:::,::::::::;;;::r5;r7:           :;;;:7L ..,.,;:,:,:,,,:,:,,,,......        .rU6w;..............</span><br><span class="line">                            .BJ71EK5;.   .,,::,:,:,,,:,:,::::::::;:;.Ls;r7             :;:::s, ..,,,r:.:.,,,.:, .,..... .    .;s5XJr,..,.............</span><br><span class="line">                            1Mv::.     .:,:,,,,,,,:::::::,;:::;:;::..J7;c:          ,. ,rri:27  , .,:;. ,:,:,,:..,....    .rpPL;:.. ... .............</span><br><span class="line">                       ..7Ls:        .,,,:,,,:,:,:::,:,:::::,:::::: .Srrr,  .,:;;;::::..:7r;r1    .: :E:..,,:,...,,.., ..XBQ7, ................... ..</span><br><span class="line">                  ,;7v7r7:,         ,,,,:.,,,,,,:,,::,:,,.::.,:.,:, :Jrr; ,r7,:..        ,:::L:  .  .7RJ .,.:.,......,,:MBs   ..............,........</span><br><span class="line">            .:;vJs7i,              ,,,., ..,,:,,,:,,,:,:.,rs,,.:,,  ;J;c,                .,::;;     Lr.E: .,...,....:,:1Z:  .........,.,...........:,.</span><br><span class="line">   .;,,:r7J1wv;,.               ....,.:. .,.,,:,,,:,,::::,sS;.:::,  cLrr.     .       .,. .,..:    ;;  r5 ........,,:;s7. ....,.,.,...........,.,.,,.</span><br><span class="line">   ,BBs:::                   . ........,.,,,,,.:,,,:,:,,.;s7r,,,,,  cc7;         ,.,,.      .:7rrJGMPOEL1, ..... ,,:rSr, : ,.,.,.,.,.........,,,,,. ..</span><br><span class="line">     rZL.                   ....... ..,,,.,,,..,,,.,;,...7J:s: ..  .wr7,        ...    .rJpQBBBBBBBQgKP77s  ..  .,7S2,,....,....,.,.,......,,.,. .:cX2</span><br><span class="line">       ;SH7,               . . . .. .,.,.,.,,,...,..r, ::Ur;7L .   .57;.           .rPBBQBBBPws:;r::::.,:P.    .;S5;,..,...,.,.,.,.... ..,,, ..,7HSJvr</span><br><span class="line">          r7r;:             . ... ..........,...,.. 7L;,rS;;ivr .   1r:       .  .rZBBK7;.JL,::Jrs;.:;,:;J, .,;LDv..:.,...,.,.,.,...,.,,:,, ,7sKGwc77;</span><br><span class="line">             .:7L7:,            . ,r,..,.,,,...,..:iLL  7s;r;cv:    U7.         :vi;:. .. :Er:::.Ls. . ,7::::vHEi ,:,,.,,,.,.,,,,,,::::, .:1QBKJJUsssc</span><br><span class="line">                .:rvw1JsL7;,      ,;..........,.:ir :r .ELr77v:,.   Pr          ..      .  Ls    ,w.   rr.r:JPr. ::,..,,,.,,,,:,:::,:,..7XgRE52US25w1c</span><br><span class="line">                      .:;7JRQpX:   ; .........,i:  .,J ;gri;7r  :   1;                     .X:    .   ,v :aK1, ,,:.,,,.,,,,:::::,;::::cOBB6K55UXUX5XUw</span><br><span class="line">                           ;J,XQB7,:    . ...,:   .:7Z.7Zi7;r:   ,  v,                      :w:;,.,:::7LUsc:..:,:.:,,,,,:,:::::::,:;c5BBPS5wSUSUaUaUa2</span><br><span class="line">                           J7  rEBBg..,. ..... .  ,L1PLKr:,:;r;;::, :,                       :;SXsJU1XLLr....:,,,,,,::::,::::::,::LL,,rZXUJU25552aUUUU</span><br><span class="line">                           JL .:sXBB:... ., .    ,OH777;,rZRBBBQL ..r,                     ,:r7::r:,;;....:,,,,,,,,.::::;::;:::.7gL    UK2UUS1aw2wU25J</span><br><span class="line">                           U7 .r71BB;  . :.. .. :QJ;.;1pBBBBBGRBRi  i:                   .      .w7.   ..,,:,,,,,:,:,:::::::,.,2BR:   .DSaUSUUS525w5U1</span><br><span class="line">                           2r :7rJBQ7   .;. .   KL::JGBBBgE6Hp6XMQ;     .                    ... ,2s    ,,,,:::::,:::::::,,.:sQQB2    ;DHa5U52S2U25USJ</span><br><span class="line">                           a: :7;1BB2   .v,    sL;LPQgDBPH6KPQBpGBG    .                   ... ..  aP:. .. ,::,:::::,,,,.;rSgBQDa;    :gSSwSUUU525US2U</span><br><span class="line">                           5; ;;r2QBB,  .s:  :a7:PBZ2,:BEaZPKgBZOgB,                        .   ...:LEHri::,:.,,.,,,::rsXRBgGKEJi,    2GH252SUS5S11wH5</span><br><span class="line">                           U: ;:rwDBBr  .c, rB6r 167.,,RQPpEP6OpKEBc      .,                 .   : ::sS7;cKB6HHa1XOQRRQBRgEZDBH; ..  ;RZUPSSU525USSpK2</span><br><span class="line">                           s; ;::aBg,   .; .Gv,H::,,::,;BQDOGHPXpKBs      .,.                 . .,.  .r:;:6gOEBQRRRDggQgOHgMGL,    .;PEHHXaaKaPXPKPaXS</span><br><span class="line">                           s7.:,sBa     :..S,  vE::::;  7BBMgZH6pQBr             .             ,:,   ,.,r2RHSSpMZPKRRZpgggav,    ;UpEZaaaKHHUHPPaUJHGO</span><br><span class="line">                           a;.775:    .::rU.    gR:,:.   :;:BBBBQar                         .  ,,   ,.,7rggJwU6DDGMgOGgXc:,   ,rPGOpKSXSXSKUKHU1UHgOEP</span><br><span class="line">                          1i :SZJrLXpBBMRB:  .v  Ba,.       :sv:                             .        irsBUSpEEGPPpg65r:..,;sKZDZHSX5XaHU55K2wUGMRZ6Z6</span><br><span class="line">                         :K  :7asvwc2MgEQB, :gg.:iB7  .,,,:.                      ...,.   .     ..   .:iM6GEpSSXZOEs:...;spZpKKXXSX5Xa5Ja5wwKGQDEpp6OZ</span><br><span class="line">                         w; ,LXLr77sLwL5aR. gRgQgaQBi ,vJwvi,.                 .;;:;7:   .   .  ,...  rRDRJUSXpgas:,.:;U66SaHa2X5aUa552X12SgQgpZpEpGOD</span><br><span class="line">                         H: ;XJ;77rv7rJUaQ;rgaPgXXHBB;        . .              .ri:;;          ,: . :6QZEKHXpXXL:,::r1PKXaa2XSS5a5S5UJ22aOBgEpOppZOOgG</span><br><span class="line">                         iwsJsr7rsLrrLcJ2gQGXHwa1SUHBB:  . ... .                 ..,           :   1BRKpOEGp2Jr;::rsXP1Uaa2U5a5aUa5SsSpgQRZGZEEZZOOgDg</span><br><span class="line">                           ,cs5aXaP552ssLwRSHXaSS5asXBB.      . .                             .  LBBgGgZHsr;vrr;rcXpP5UUS5X5S2XS5SS1URBggpEZgDDGOGggRD</span><br><span class="line">                              ,;irrs2KgQRPJJJSUXKXSHJpBM   . . .                                ZBBOUsr;:.  ,,,rHgZPUaSaUSUSSXaUPXsSBB6ZZp6EEGOOGDEggO</span><br><span class="line">                                       ;BBQQZaSJ5J15SJDQ7                                    .iEBL:.  . .,:,:;SRQGZXPXXSHaS2UUSUSswQB6OZgG6pZZGODEOGDE</span><br><span class="line">                                      JgUri1aGEpEpXSS5LBQ,                              .rLap2Jr     ;712OO6ZggRDZXHXpKK2211LLLc7wgBa2PODRGE6OZgDgGDGD</span><br><span class="line">                                    7QB; ,Jc76DaZXOZgDPEBBX,                       :c1HEZ1c;:,.,:;cHDgQQggMZgGOZO6OEGpXsLLsJXHPOBBBc;vss5EMggZDODOgED6</span><br><span class="line">                                   LZJ::iwrrr72EPgXU5OBBBBBBBp7:               .i5P6wL;,   .:LS6DMgMgZKgEOPOGGDDGEXULvLSOBBBBBQBgDQDJ5rrr7JOQQDDZGEgDD</span><br><span class="line">                                   wp rR5,       .HQRX7r72RQBBBBBQBMEK6Uc7sc7cHOU:,     .:LHgOQg6ZOPZpZGGEDERZPwcr7LKDDaJr:.      rBX;;:r:ir1DBQMgRgDp</span><br><span class="line">                                   7D,sw:      ,   Z.      .LgBBQBBOsJaQBBBBBBXrr.  .:rwZBBQgROgDgDOERRMgROOScrLsPP5r,             7Qs,::::::rUgRgZOG6</span><br><span class="line">                                   ,Q57:r  ,:  ,r  U:         .;;   .vL7L;r:UG7.:sr;JSgQBgDEZXXUSXpHa21svr7r7s2v:.                  iQK...:,:::;LLJJws</span><br><span class="line">                                    OBHs;.  :;;,v  H:             :6X;       rpL;7pSrrr7r;::,....,,:;iirrvvvr,                       :BBPs;;:,,,,::;::</span><br><span class="line">                                    ::rPDEL:..7:c;7r              pK  .:      :KL.:r:..     ..:icsS5sr:,.                              JgGgBQDOSJss77r</span><br><span class="line">                                         :r;:::  ,                PH r,       ,;5: ,::::;7Ls7Lc7;:                                         ,:7JP17rJUs</span><br><span class="line">                                                                  .:J: :;  .,:K6BQS7:.,.,.</span><br><span class="line">                                                                    :r7Ji;r7;::;;.</span><br><span class="line">                                                                        .                                                                             **/</span><br><span class="line"></span><br><span class="line"><span class="comment">#include &lt;bits/stdc++.h&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line"><span class="comment">#define FFI(a, b) for(int i = a; i &lt; b; i++)</span></span><br><span class="line"><span class="comment">#define FFJ(a, b) for(int j = a; j &lt; b; j++)</span></span><br><span class="line"><span class="comment">#define FFK(a, b) for(int k = a; k &lt; b; k++)</span></span><br><span class="line"><span class="comment">#define RR(a, b) for(int i = a; i &gt; b; i++)</span></span><br><span class="line"><span class="comment">#define ME(a, b) memset(a, b, sizeof(a))</span></span><br><span class="line"><span class="comment">#define SC(x) scanf("%d", &amp;x)</span></span><br><span class="line"><span class="comment">#define SCC(a, b) scanf("%d%d", &amp;a, &amp;b)</span></span><br><span class="line"><span class="comment">#define SCCC(a, b, c) scanf("%d%d%d", &amp;a, &amp;b, &amp;c)</span></span><br><span class="line"><span class="comment">#define PR(x) printf("%d\n", x)</span></span><br><span class="line"><span class="comment">#define PRR(a, b) printf("%d%d\n", a, b);</span></span><br><span class="line"><span class="comment">#define INF 0x3f3f3f3f</span></span><br><span class="line"><span class="comment">#define MAX 30000</span></span><br><span class="line"><span class="comment">#define MOD 1000000007</span></span><br><span class="line"><span class="comment">#define E 2.71828182845</span></span><br><span class="line"><span class="comment">#define M 8</span></span><br><span class="line"><span class="comment">#define N 6</span></span><br><span class="line">typedef long long LL;</span><br><span class="line">const double PI = acos(-1.0);</span><br><span class="line">typedef pair&lt;int, int&gt; Author;</span><br><span class="line">inline int <span class="function"><span class="title">read</span></span>() &#123;</span><br><span class="line">    char c = getchar();int x = 0, f = 1;</span><br><span class="line">    <span class="keyword">while</span>(c &lt; <span class="string">'0'</span> || c &gt; <span class="string">'9'</span>)&#123;<span class="keyword">if</span>(c == <span class="string">'-'</span>)f = -1;c = getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span>(c &gt;= <span class="string">'0'</span> &amp;&amp; c &lt;= <span class="string">'9'</span>)&#123;x = x * 10 + c - <span class="string">'0'</span>;c = getchar();&#125;</span><br><span class="line">    <span class="built_in">return</span> x * f;</span><br><span class="line">&#125;</span><br><span class="line">/*******************************************************************************************************************************************************/</span><br><span class="line">int num[MAX], DP[MAX];</span><br><span class="line">int main(void)&#123;</span><br><span class="line">	int n;</span><br><span class="line"></span><br><span class="line">	SC(n);ME(DP, INF);</span><br><span class="line">	FFI(0, n) SC(num[i]);</span><br><span class="line">	FFI(0, n) *upper_bound(DP, DP + MAX, num[i]) = num[i];</span><br><span class="line">	PR(lower_bound(DP, DP + MAX, INF) - DP);</span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/weixin.png" alt="Empirefree WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/zhifubao.jpg" alt="Empirefree Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+	<div>
+	
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+	
+	</div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/图论/" rel="tag"><i class="fa fa-tag"></i> 图论</a>
+          
+            <a href="/tags/牛客训练/" rel="tag"><i class="fa fa-tag"></i> 牛客训练</a>
+          
+            <a href="/tags/基础-思维/" rel="tag"><i class="fa fa-tag"></i> 基础+思维</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/25/CTF-纪念第一次打网络安全赛/" rel="next" title="CTF-纪念第一次打网络安全赛">
+                <i class="fa fa-chevron-left"></i> CTF-纪念第一次打网络安全赛
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/31/百度网盘破解版/" rel="prev" title="百度网盘破解版">
+                百度网盘破解版 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "1",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      },
+      "slide": {
+        "bdImg": "5",
+        "bdPos": "left",
+        "bdTop": "100"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+	<div id="gitalk-container"></div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Empirefree" />
+            
+              <p class="site-author-name" itemprop="name">Empirefree</p>
+              <p class="site-description motion-element" itemprop="description">心灵寄托所</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Empirefree" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:skt.hyq@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.cnblogs.com/meditation5201314/" target="_blank" title="博客园">
+                      
+                        <i class="fa fa-fw fa-globe"></i>博客园</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/empirefree" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+            </div>
+          
+			
+          
+          
+		  
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+			  
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.ctguqmx.com/" title="启明星工作室" target="_blank">启明星工作室</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://192.168.9.210/acmctgu/login.jsp" title="校OJ" target="_blank">校OJ</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://vjudge.net/" title="Vj" target="_blank">Vj</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://arena.net9.org/games" title="清华AI" target="_blank">清华AI</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.ggbond.cc/" title="花锅锅" target="_blank">花锅锅</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.tk-xiong.com/" title="熊锅锅" target="_blank">熊锅锅</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/zhang_hua_chang" title="张华厂学长" target="_blank">张华厂学长</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://faxinwang.github.io/" title="发新学长" target="_blank">发新学长</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://junxuelian.cn/" title="陈俊学长" target="_blank">陈俊学长</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.csdn.net/cx776474961" title="全能神陈想" target="_blank">全能神陈想</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/Asumi/" title="计科美少女晗神" target="_blank">计科美少女晗神</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://yoursugars.github.io/" title="神琦" target="_blank">神琦</a>
+                  </li>
+                
+              </ul>
+			  <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1842449680&amp;site=qq&amp;menu=yes">
+<img border="0" src="http://wpa.qq.com/pa?p=1:1842449680:13" alt="有事您Q我" title="有事您Q我">
+              <!--萌萌哒仓鼠-->
+			    <object type="application/x-shockwave-flash" style="outline:none;" data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" width="150" height="160">
+<param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?">
+<param name="AllowScriptAccess" value="always">
+<param name="wmode" value="opaque">
+</object>
+			</div>
+          
+			<!--网易云音乐-->
+			<div id="music163player">
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=541480237&auto=1&height=66"></iframe>
+			</div>
+        </div>
+      </section>
+	
+		
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Empirefree</span>
+
+  
+</div>
+
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("02/14/2018 12:49:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Tdbc00tGTGvTb7JMaOiFyS26-gzGzoHsz',
+        appKey: 'J1wPX49j3abL6bKvWBxLWcza',
+        placeholder: 'Just go go',
+        avatar:'',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '479be4d38d6350879fbc',
+          clientSecret: '44061be9b3d1e179212cd3d4675cd2b72896eef8',
+          repo: 'Empirefree.github.io',
+          owner: 'empirefree',
+          admin: ['Empirefree'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/crash_cheat.js"></script>

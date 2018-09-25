@@ -587,8 +587,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/09/08/CF1/" rel="prev" title="Reversing Encryption">
-                Reversing Encryption <i class="fa fa-chevron-right"></i>
+              <a href="/2018/09/08/ACM_容斥原理_FindINT/" rel="prev" title="How many integers can you find">
+                How many integers can you find <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1101,18 +1101,21 @@ setInterval("createtime()",250);
 
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-   <script type="text/javascript">
-        var gitalk = new Gitalk({
-          clientID: '479be4d38d6350879fbc',
-          clientSecret: '44061be9b3d1e179212cd3d4675cd2b72896eef8',
-          repo: 'Empirefree.github.io',
-          owner: 'empirefree',
-          admin: ['Empirefree'],
-          id: location.pathname,
-          distractionFreeMode: 'true'
-        })
-        gitalk.render('gitalk-container')           
-       </script>
+
+ <script src="/js/src/md5.min.js"></script>
+
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '479be4d38d6350879fbc',
+      clientSecret: '44061be9b3d1e179212cd3d4675cd2b72896eef8',
+      repo: 'Empirefree.github.io',
+      owner: 'empirefree',
+      admin: ['Empirefree'],
+      id: md5(location.pathname),
+      distractionFreeMode: 'true'
+    })
+    gitalk.render('gitalk-container')
+  </script>
 
 
   

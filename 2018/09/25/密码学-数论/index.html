@@ -100,7 +100,7 @@
 
 
 
-  <meta name="keywords" content="图论," />
+  <meta name="keywords" content="密码学," />
 
 
 
@@ -113,18 +113,18 @@
 
 
 
-<meta name="description" content="坚持刷题，坚持签到  题目链接">
-<meta name="keywords" content="图论">
+<meta name="description" content="人的一切痛苦都是对自己无能的宣泄  挺喜欢密码学前面的一些转换方法的，没写总结，但是也做了笔记了，写一篇数论的分析吧。">
+<meta name="keywords" content="密码学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TwoGraphs(D题)">
-<meta property="og:url" content="https://empirefree.top/2018/08/23/TwoGraphs-D题/index.html">
+<meta property="og:title" content="密码学-数论">
+<meta property="og:url" content="https://empirefree.top/2018/09/25/密码学-数论/index.html">
 <meta property="og:site_name" content="Empirefree">
-<meta property="og:description" content="坚持刷题，坚持签到  题目链接">
+<meta property="og:description" content="人的一切痛苦都是对自己无能的宣泄  挺喜欢密码学前面的一些转换方法的，没写总结，但是也做了笔记了，写一篇数论的分析吧。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-30T02:03:28.710Z">
+<meta property="og:updated_time" content="2018-09-25T13:24:52.782Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TwoGraphs(D题)">
-<meta name="twitter:description" content="坚持刷题，坚持签到  题目链接">
+<meta name="twitter:title" content="密码学-数论">
+<meta name="twitter:description" content="人的一切痛苦都是对自己无能的宣泄  挺喜欢密码学前面的一些转换方法的，没写总结，但是也做了笔记了，写一篇数论的分析吧。">
 
 
 
@@ -154,13 +154,13 @@
 
 
 
-  <link rel="canonical" href="https://empirefree.top/2018/08/23/TwoGraphs-D题/"/>
+  <link rel="canonical" href="https://empirefree.top/2018/09/25/密码学-数论/"/>
 
 
 
 
 
-  <title>TwoGraphs(D题) | Empirefree</title>
+  <title>密码学-数论 | Empirefree</title>
   
 
 
@@ -361,7 +361,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://empirefree.top/2018/08/23/TwoGraphs-D题/">
+    <link itemprop="mainEntityOfPage" href="https://empirefree.top/2018/09/25/密码学-数论/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Empirefree">
@@ -378,7 +378,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">TwoGraphs(D题)</h1>
+          <h1 class="post-title" itemprop="name headline">密码学-数论</h1>
         
 
         <div class="post-meta">
@@ -390,8 +390,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-23T19:22:21+08:00">
-                2018-08-23
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-25T19:59:43+08:00">
+                2018-09-25
               </time>
             
 
@@ -413,8 +413,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/2018牛客网暑期ACM多校训练营（第一场）/" itemprop="url" rel="index">
-                    <span itemprop="name">2018牛客网暑期ACM多校训练营（第一场）</span>
+                  <a href="/categories/密码学-数论/" itemprop="url" rel="index">
+                    <span itemprop="name">密码学-数论</span>
                   </a>
                 </span>
 
@@ -431,8 +431,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/08/23/TwoGraphs-D题/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/08/23/TwoGraphs-D题/" itemprop="commentCount"></span>
+                <a href="/2018/09/25/密码学-数论/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/25/密码学-数论/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -496,17 +496,77 @@
       
 
       
-        <p><blockquote class="blockquote-center">坚持刷题，坚持签到</blockquote><br>  <a href="https://www.nowcoder.com/acm/contest/139/D" target="_blank" rel="noopener">题目链接</a><br><a id="more"></a></p>
-<ul>
-<li>题意:枚举A的图的个数，求和B同构的个数（顶点个数和边连接方式都要相同）<blockquote>
-<p>do{}next_permutation枚举A中图的个数，若和B同构，则保存下来(vis记录了边连接的情况，每次需要利用改变f的边连接情况来判断）然后里面set保存，当然，利用散列哈希保证每次同构保存的图不一样,这里也可以用unordered_set<ll>来改变</ll></p>
+        <p><blockquote class="blockquote-center">人的一切痛苦都是对自己无能的宣泄</blockquote><br>  挺喜欢密码学前面的一些转换方法的，没写总结，但是也做了笔记了，写一篇数论的分析吧。<br><a id="more"></a></p>
+<h4 id="知识储备"><a href="#知识储备" class="headerlink" title="知识储备"></a>知识储备</h4><ul>
+<li>素数：一个数只能被1和其本身整除（1不是素数），素数和任何数都是互素的。</li>
+<li>Gcd(a, b)：求a和b的最大公约数(Gcd(a,b) == 1，说明a,b互素)</li>
+<li>Lcm(a, b): 求a和b的最小公倍数</li>
+<li>a <em> b = Gcd(a, b) </em> Lcm(a, b)<h4 id="惟一分解定理"><a href="#惟一分解定理" class="headerlink" title="惟一分解定理"></a>惟一分解定理</h4><blockquote>
+<p>惟一分解定理：任一整数都可以被分解成任意素数幂的乘积之和。（不是哥德巴赫猜想呀（= _ = )</p>
 </blockquote>
 </li>
 </ul>
-<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码</div></div><div class="fold">
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br></pre></td><td class="code"><pre><span class="line">  /**</span><br><span class="line"></span><br><span class="line">                                                                       :;LaEaHKEEGpPXU7;,</span><br><span class="line">                                                                  .:75pKH11252U252XapZgRQgD6XJscLr;,.</span><br><span class="line">                                                               :LXpRgGaX521JLw1JswJJsJs22XHPPEZEGDOMMRDOa7.</span><br><span class="line">                                                           .r2EDDZEpZPZP6KpHX5SXH5XXa5KwaXaSX5UJ1c77sLs2GMQQ6r                                       .</span><br><span class="line">                                                        ,LpgOGpEZGZEZEpZKpHHU5wP5HEDgpXpHa2SSa5aSXULr7rrirrJXRBp;                                   ;B</span><br><span class="line">                                                     ,J6MRZH6EgEEZE6E6EZZPZXXwSSGQXr::aPpP5USUHaHaKa5Lvrr7ri;rLHBB2:                                Kc</span><br><span class="line">                                                   rpQDOpPPOGGZOGOZG6GEOEOEDPPGBa.  .PaSSUXSUUUaUSaKXKS177r7rrrirSBBR7                             .O,</span><br><span class="line">                                                :UBQOKPK6ZOOOEDEO6GZE6EpEpDgDBR:   UBpXHa5aSaUS5SUS5XapPHJc7rrv7rr7sgBBs                           .g.</span><br><span class="line">                                              ;gBMPXpO6GEOEOEOEGEOEE6EZEEDRGBB    EB5pKSXpHKaHSX552S5aUHHEX17c7vr7777s5RBS:                        .R;</span><br><span class="line">                                           .sQBPXpDZOODOgODGOGgEDEOEOGgGgOOMB:   LBKKSXSHa52aaKXHXKaa5aSaaHXSJLcL7vcc777JDBBg2;.                    Qi</span><br><span class="line">                                         ;2ggp2EDDOggGEDGgDDOgGGZDOOZOGg6gEBX    vBZaHUKaaUXXXSXXKXpXHXH5wwaa52U1wssLsLJccv1UDQBQ67.                O7</span><br><span class="line">                                       :ZZUU5PROOEOZOZGGOODZOGgODZOOgOggRgRB; ;:..R6XaKKpP6PGppKPHpHpPX5aU21UUa5Sw52UwUJJv77L77sSpQMDU;            ;B5</span><br><span class="line">                                     ,SRJ7sSHGggEOZOEG6OODpOZgggOQQBBBBBQBBQ.,;;. LBOgOgDRDDZODMgQRgRDaa552a252UUa25w5UaU2sLvccs7r7sJZBBMr       ,XQJ:</span><br><span class="line">                                    LQHr77J6RGOZDZOEGEDGgDRORQBBBQRDPU1Jscwa7.,::.:J7r;::::.  ..,:;i7UOgRRRgDPH5SUSU52U2HHa1JJJLJLccLr71RBB,    7R2,</span><br><span class="line">                                  :RZv;77JSgGOZEODEDGOEggQBBBMS7;:,:,,.,.,.:7L;:,;.:  ,: . .....       .:;rJU6GgGRggEZHPaKXX2S221Js1Lc7r:7QB. .XX:</span><br><span class="line">                                 7g1;;7rcXG6gpGDZGgZOOQBBQpr.   ::::;:;:::Jr::sr;::;:.:vs,:::::::::::,,         ,:7L5HGOggRgZUUU5wSUaJLc7r7BOiDr  ...</span><br><span class="line">                               .XX;;;irLHGKpZZZEKgDRBBB6i    ,;;:;;;;r;;:s177:,;L7:;7:.rHi,:::::::::::::::::,.         .,;7ZRQgO6KUUJsLwsJ7KBM. .....</span><br><span class="line">                               JZ:;rrrc5EPHp6XgpRBBBE;     :i:;;;;;:;;;:c7::r7;,::::::::rv:,:::::::::::,:,:,:,,,,            .;sORQRGX21wsXU:  .... .</span><br><span class="line">                              .Br;iir72EHPHZ6EgBBR7.   ..;ii:;;;;;;;;;:71r::.:7,  .::7;:;H;.::,:j::::::,:::::,,,::,,,              ,7wEDRZBMr  .......</span><br><span class="line">                              1D;:r;rwOPXPKH6BBX,   .:;:;;;:::;:;;;;;::Ls,;ss..r.  ,c77;sLU,:,:::,:::,:,:,:,,,:,,,:::.                  .:.rP:.......</span><br><span class="line">                              D2:i;rJpKHXHXgg7    .,,::::;:::::;:;:;;:;SL7sS2, :.   ::::,:U7.:::,:::,:,,,,,:,,.,,,.,:,                    ;L:. .. ...</span><br><span class="line">                             :Qc;i7LGZPa6gBM,  ...,,::::::::::::;;::;.JJ;ic:         ;:::,v1,.:::;7,,,:,:,:,,,,.:,,,,..                :2wr.  .......</span><br><span class="line">                             sRr:rrwZGgBQR7.  .,,::::::::::::::;::;:::Hr:7i          ,;;:::U: .,,,:r.,,:,:,:,,,:,,,.....             7K2:. ..........</span><br><span class="line">                             OX:irsXgQZ:.   .,,:::,,:::,::::::::;;;::r5;r7:           :;;;:7L ..,.,;:,:,:,,,:,:,,,,......        .rU6w;..............</span><br><span class="line">                            .BJ71EK5;.   .,,::,:,:,,,:,:,::::::::;:;.Ls;r7             :;:::s, ..,,,r:.:.,,,.:, .,..... .    .;s5XJr,..,.............</span><br><span class="line">                            1Mv::.     .:,:,,,,,,,:::::::,;:::;:;::..J7;c:          ,. ,rri:27  , .,:;. ,:,:,,:..,....    .rpPL;:.. ... .............</span><br><span class="line">                       ..7Ls:        .,,,:,,,:,:,:::,:,:::::,:::::: .Srrr,  .,:;;;::::..:7r;r1    .: :E:..,,:,...,,.., ..XBQ7, ................... ..</span><br><span class="line">                  ,;7v7r7:,         ,,,,:.,,,,,,:,,::,:,,.::.,:.,:, :Jrr; ,r7,:..        ,:::L:  .  .7RJ .,.:.,......,,:MBs   ..............,........</span><br><span class="line">            .:;vJs7i,              ,,,., ..,,:,,,:,,,:,:.,rs,,.:,,  ;J;c,                .,::;;     Lr.E: .,...,....:,:1Z:  .........,.,...........:,.</span><br><span class="line">   .;,,:r7J1wv;,.               ....,.:. .,.,,:,,,:,,::::,sS;.:::,  cLrr.     .       .,. .,..:    ;;  r5 ........,,:;s7. ....,.,.,...........,.,.,,.</span><br><span class="line">   ,BBs:::                   . ........,.,,,,,.:,,,:,:,,.;s7r,,,,,  cc7;         ,.,,.      .:7rrJGMPOEL1, ..... ,,:rSr, : ,.,.,.,.,.........,,,,,. ..</span><br><span class="line">     rZL.                   ....... ..,,,.,,,..,,,.,;,...7J:s: ..  .wr7,        ...    .rJpQBBBBBBBQgKP77s  ..  .,7S2,,....,....,.,.,......,,.,. .:cX2</span><br><span class="line">       ;SH7,               . . . .. .,.,.,.,,,...,..r, ::Ur;7L .   .57;.           .rPBBQBBBPws:;r::::.,:P.    .;S5;,..,...,.,.,.,.... ..,,, ..,7HSJvr</span><br><span class="line">          r7r;:             . ... ..........,...,.. 7L;,rS;;ivr .   1r:       .  .rZBBK7;.JL,::Jrs;.:;,:;J, .,;LDv..:.,...,.,.,.,...,.,,:,, ,7sKGwc77;</span><br><span class="line">             .:7L7:,            . ,r,..,.,,,...,..:iLL  7s;r;cv:    U7.         :vi;:. .. :Er:::.Ls. . ,7::::vHEi ,:,,.,,,.,.,,,,,,::::, .:1QBKJJUsssc</span><br><span class="line">                .:rvw1JsL7;,      ,;..........,.:ir :r .ELr77v:,.   Pr          ..      .  Ls    ,w.   rr.r:JPr. ::,..,,,.,,,,:,:::,:,..7XgRE52US25w1c</span><br><span class="line">                      .:;7JRQpX:   ; .........,i:  .,J ;gri;7r  :   1;                     .X:    .   ,v :aK1, ,,:.,,,.,,,,:::::,;::::cOBB6K55UXUX5XUw</span><br><span class="line">                           ;J,XQB7,:    . ...,:   .:7Z.7Zi7;r:   ,  v,                      :w:;,.,:::7LUsc:..:,:.:,,,,,:,:::::::,:;c5BBPS5wSUSUaUaUa2</span><br><span class="line">                           J7  rEBBg..,. ..... .  ,L1PLKr:,:;r;;::, :,                       :;SXsJU1XLLr....:,,,,,,::::,::::::,::LL,,rZXUJU25552aUUUU</span><br><span class="line">                           JL .:sXBB:... ., .    ,OH777;,rZRBBBQL ..r,                     ,:r7::r:,;;....:,,,,,,,,.::::;::;:::.7gL    UK2UUS1aw2wU25J</span><br><span class="line">                           U7 .r71BB;  . :.. .. :QJ;.;1pBBBBBGRBRi  i:                   .      .w7.   ..,,:,,,,,:,:,:::::::,.,2BR:   .DSaUSUUS525w5U1</span><br><span class="line">                           2r :7rJBQ7   .;. .   KL::JGBBBgE6Hp6XMQ;     .                    ... ,2s    ,,,,:::::,:::::::,,.:sQQB2    ;DHa5U52S2U25USJ</span><br><span class="line">                           a: :7;1BB2   .v,    sL;LPQgDBPH6KPQBpGBG    .                   ... ..  aP:. .. ,::,:::::,,,,.;rSgBQDa;    :gSSwSUUU525US2U</span><br><span class="line">                           5; ;;r2QBB,  .s:  :a7:PBZ2,:BEaZPKgBZOgB,                        .   ...:LEHri::,:.,,.,,,::rsXRBgGKEJi,    2GH252SUS5S11wH5</span><br><span class="line">                           U: ;:rwDBBr  .c, rB6r 167.,,RQPpEP6OpKEBc      .,                 .   : ::sS7;cKB6HHa1XOQRRQBRgEZDBH; ..  ;RZUPSSU525USSpK2</span><br><span class="line">                           s; ;::aBg,   .; .Gv,H::,,::,;BQDOGHPXpKBs      .,.                 . .,.  .r:;:6gOEBQRRRDggQgOHgMGL,    .;PEHHXaaKaPXPKPaXS</span><br><span class="line">                           s7.:,sBa     :..S,  vE::::;  7BBMgZH6pQBr             .             ,:,   ,.,r2RHSSpMZPKRRZpgggav,    ;UpEZaaaKHHUHPPaUJHGO</span><br><span class="line">                           a;.775:    .::rU.    gR:,:.   :;:BBBBQar                         .  ,,   ,.,7rggJwU6DDGMgOGgXc:,   ,rPGOpKSXSXSKUKHU1UHgOEP</span><br><span class="line">                          1i :SZJrLXpBBMRB:  .v  Ba,.       :sv:                             .        irsBUSpEEGPPpg65r:..,;sKZDZHSX5XaHU55K2wUGMRZ6Z6</span><br><span class="line">                         :K  :7asvwc2MgEQB, :gg.:iB7  .,,,:.                      ...,.   .     ..   .:iM6GEpSSXZOEs:...;spZpKKXXSX5Xa5Ja5wwKGQDEpp6OZ</span><br><span class="line">                         w; ,LXLr77sLwL5aR. gRgQgaQBi ,vJwvi,.                 .;;:;7:   .   .  ,...  rRDRJUSXpgas:,.:;U66SaHa2X5aUa552X12SgQgpZpEpGOD</span><br><span class="line">                         H: ;XJ;77rv7rJUaQ;rgaPgXXHBB;        . .              .ri:;;          ,: . :6QZEKHXpXXL:,::r1PKXaa2XSS5a5S5UJ22aOBgEpOppZOOgG</span><br><span class="line">                         iwsJsr7rsLrrLcJ2gQGXHwa1SUHBB:  . ... .                 ..,           :   1BRKpOEGp2Jr;::rsXP1Uaa2U5a5aUa5SsSpgQRZGZEEZZOOgDg</span><br><span class="line">                           ,cs5aXaP552ssLwRSHXaSS5asXBB.      . .                             .  LBBgGgZHsr;vrr;rcXpP5UUS5X5S2XS5SS1URBggpEZgDDGOGggRD</span><br><span class="line">                              ,;irrs2KgQRPJJJSUXKXSHJpBM   . . .                                ZBBOUsr;:.  ,,,rHgZPUaSaUSUSSXaUPXsSBB6ZZp6EEGOOGDEggO</span><br><span class="line">                                       ;BBQQZaSJ5J15SJDQ7                                    .iEBL:.  . .,:,:;SRQGZXPXXSHaS2UUSUSswQB6OZgG6pZZGODEOGDE</span><br><span class="line">                                      JgUri1aGEpEpXSS5LBQ,                              .rLap2Jr     ;712OO6ZggRDZXHXpKK2211LLLc7wgBa2PODRGE6OZgDgGDGD</span><br><span class="line">                                    7QB; ,Jc76DaZXOZgDPEBBX,                       :c1HEZ1c;:,.,:;cHDgQQggMZgGOZO6OEGpXsLLsJXHPOBBBc;vss5EMggZDODOgED6</span><br><span class="line">                                   LZJ::iwrrr72EPgXU5OBBBBBBBp7:               .i5P6wL;,   .:LS6DMgMgZKgEOPOGGDDGEXULvLSOBBBBBQBgDQDJ5rrr7JOQQDDZGEgDD</span><br><span class="line">                                   wp rR5,       .HQRX7r72RQBBBBBQBMEK6Uc7sc7cHOU:,     .:LHgOQg6ZOPZpZGGEDERZPwcr7LKDDaJr:.      rBX;;:r:ir1DBQMgRgDp</span><br><span class="line">                                   7D,sw:      ,   Z.      .LgBBQBBOsJaQBBBBBBXrr.  .:rwZBBQgROgDgDOERRMgROOScrLsPP5r,             7Qs,::::::rUgRgZOG6</span><br><span class="line">                                   ,Q57:r  ,:  ,r  U:         .;;   .vL7L;r:UG7.:sr;JSgQBgDEZXXUSXpHa21svr7r7s2v:.                  iQK...:,:::;LLJJws</span><br><span class="line">                                    OBHs;.  :;;,v  H:             :6X;       rpL;7pSrrr7r;::,....,,:;iirrvvvr,                       :BBPs;;:,,,,::;::</span><br><span class="line">                                    ::rPDEL:..7:c;7r              pK  .:      :KL.:r:..     ..:icsS5sr:,.                              JgGgBQDOSJss77r</span><br><span class="line">                                         :r;:::  ,                PH r,       ,;5: ,::::;7Ls7Lc7;:                                         ,:7JP17rJUs</span><br><span class="line">                                                                  .:J: :;  .,:K6BQS7:.,.,.</span><br><span class="line">                                                                    :r7Ji;r7;::;;.</span><br><span class="line">                                                                        .                                                                             **/</span><br><span class="line"></span><br><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include &lt;algorithm&gt;</span></span><br><span class="line"><span class="comment">#include &lt;vector&gt;</span></span><br><span class="line"><span class="comment">#include &lt;stdlib.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;string.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;math.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;queue&gt;</span></span><br><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;set&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line"><span class="comment">#define FFI(a, b) for(int i = a; i &lt; b; i++)</span></span><br><span class="line"><span class="comment">#define FFJ(a, b) for(int j = a; j &lt; b; j++)</span></span><br><span class="line"><span class="comment">#define FFK(a, b) for(int k = a; k &lt; b; k++)</span></span><br><span class="line"><span class="comment">#define RR(a, b) for(int i = a; i &gt; b; i++)</span></span><br><span class="line"><span class="comment">#define ME(a, b) memset(a, b, sizeof(a))</span></span><br><span class="line"><span class="comment">#define SC(x) scanf("%d", &amp;x)</span></span><br><span class="line"><span class="comment">#define SCC(a, b) scanf("%d%d", &amp;a, &amp;b)</span></span><br><span class="line"><span class="comment">#define SCCC(a, b, c) scanf("%d%d%d", &amp;a, &amp;b, &amp;c)</span></span><br><span class="line"><span class="comment">#define PR(x) printf("%d\n", x)</span></span><br><span class="line"><span class="comment">#define PRR(a, b) printf("%d%d\n", a, b);</span></span><br><span class="line"><span class="comment">#define INF 0x3f3f3f3f</span></span><br><span class="line"><span class="comment">#define MAX 10</span></span><br><span class="line"><span class="comment">#define MOD 1000000007</span></span><br><span class="line"><span class="comment">#define E 2.71828182845</span></span><br><span class="line"><span class="comment">#define M 10</span></span><br><span class="line"><span class="comment">#define N 6</span></span><br><span class="line">typedef long long LL;</span><br><span class="line">const double PI = acos(-1.0);</span><br><span class="line">typedef pair&lt;int, int&gt; Author;</span><br><span class="line">inline int <span class="function"><span class="title">read</span></span>() &#123;</span><br><span class="line">    char c = getchar();int x = 0, f = 1;</span><br><span class="line">    <span class="keyword">while</span>(c &lt; <span class="string">'0'</span> || c &gt; <span class="string">'9'</span>)&#123;<span class="keyword">if</span>(c == <span class="string">'-'</span>)f = -1;c = getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span>(c &gt;= <span class="string">'0'</span> &amp;&amp; c &lt;= <span class="string">'9'</span>)&#123;x = x * 10 + c - <span class="string">'0'</span>;c = getchar();&#125;</span><br><span class="line">    <span class="built_in">return</span> x * f;</span><br><span class="line">&#125;</span><br><span class="line">/*******************************************************************************************************************************************************/</span><br><span class="line">LL vis[MAX][MAX], f[MAX];</span><br><span class="line">pair&lt;LL, LL&gt; p[MAX * 10];</span><br><span class="line"><span class="built_in">set</span>&lt;LL&gt; s; //unordered_set&lt;LL&gt; s;</span><br><span class="line">int main(void)&#123;</span><br><span class="line">	<span class="comment">#ifdef Empirefree</span></span><br><span class="line">        freopen(<span class="string">"in.txt"</span>, <span class="string">"r"</span>, stdin);</span><br><span class="line">        freopen(<span class="string">"out.txt"</span>, <span class="string">"w"</span>, stdout);</span><br><span class="line">    <span class="comment">#endif</span></span><br><span class="line"></span><br><span class="line">	ios::sync_with_stdio(<span class="literal">false</span>); cin.tie(0); cout.tie(0);</span><br><span class="line">	LL n, m1, m2, a, b, temp1, temp2;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span>(cin&gt;&gt;n&gt;&gt;m1&gt;&gt;m2)&#123;</span><br><span class="line">		s.clear();</span><br><span class="line">		ME(vis, 0);FFI(1, n + 1) f[i] = i;</span><br><span class="line">		FFI(1, m1 + 1)&#123;</span><br><span class="line">			cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">			vis[a][b] = vis[b][a] = 1;</span><br><span class="line">		&#125;</span><br><span class="line">		FFI(1, m2 + 1) cin&gt;&gt;p[i].first&gt;&gt;p[i].second;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">do</span>&#123;</span><br><span class="line">			temp1 = temp2 = 0;</span><br><span class="line">			FFI(1, m2 + 1)&#123;</span><br><span class="line">				<span class="keyword">if</span>(vis[f[p[i].first]][f[p[i].second]])&#123;</span><br><span class="line">					temp1 = temp1 * 133 + i;</span><br><span class="line">					temp1 %= MOD;</span><br><span class="line">					temp2++;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(temp2 == m1) s.insert(temp1);	//Í¬¹¹</span><br><span class="line">		&#125;<span class="keyword">while</span>(next_permutation(f + 1, f + n + 1));</span><br><span class="line">		cout&lt;&lt;s.size()&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">return</span> EXIT_SUCCESS;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h4><ol>
+<li><p>为什么会有逆元？   </p>
+<blockquote>
+<p>(a +  b) % p = (a%p +  b%p) %p  （对）<br>(a  -  b) % p = (a%p  -  b%p) %p  （对）<br>(a *<em> b) % p = (a%p </em> *  b%p) %p  （对）<br>(a  /  b) % p = (a%p  /  b%p) %p  （错）<br>举个栗子：（100 / 50）% 20 = 2 != （100 % 20）/ (50 % 20) = 0<br>突然想起来快排，为什么快排必须要从右边开始搜索？6,1,2,7,9，本来应该是2和6交换，如果左边开始，就是7和6交换</p>
+</blockquote>
+</li>
+<li><p>证明逆元的3种方法：</p>
+<ul>
+<li><p>费马小定理(前提:p要为素数)</p>
+<blockquote>
+<p>a^p  ≡a(mod p)<br>a^(p-1) ≡1 (mod p)<br>a^(p-2) ≡1/a (mod p)约定1/a为inv(a)<br>inv(a) = a^(p-2) (mod p),这里inv(a)就是逆元<br>例题：快速求2 ^ 13的2的哪些的乘法 (快速幂解法)<br>解：13变成2进制: 1101，只看最后3位，<strong>有1就平方再乘2，没有就直接平方</strong>,所以为(((2)^2 * 2)^2)^2 ** 2<br>注：这种解法其实是快速幂的反转，这里是二进制从左到右，实际求的时候是从右到左。详情看代码</p>
+</blockquote>
+</li>
+<li><p>欧几里得算法：（本方法和下面一样，故算作一种证明法）</p>
+<blockquote>
+<p>Gcd(a, b) = Gcd(b, a % b)，求最大公约数<br>注：C++中支持__gcd()函数。</p>
+</blockquote>
+</li>
+<li><p>扩展欧几里得算法：(前提：gcd(a, n) = 1,即a,n互素(不一定是n)，所以费马只是扩欧的特殊情况，另外你代码里面a * x + b ** y = gcd(a, b)顺序不一样，所以求的结果也是不一样的。)</p>
+<blockquote>
+<p>a * a ^(-1) ≡1 (mod n)<br>例题：求gcd(550, 1769)  P69<br>解：你可以发现，你把1769和550换位置，结果是不一样的。所以要看清求的是什么逆元。本题只需要给点1,0初始化，按照书上的解法一步一步来即可。<br>例题：求550^(-1)mod1769 P70<br>解，也是按照书上来，这也和上面解法一样。</p>
+</blockquote>
+</li>
+<li><p>没什么人知道，但是很牛逼的证明</p>
+<blockquote>
+<p>当p是个质数的时候有<br>inv(a) = (p - p / a) * inv(p % a) % p<br>参考链接： <a href="https://www.cnblogs.com/linyujun/p/5194184.html" target="_blank" rel="noopener">https://www.cnblogs.com/linyujun/p/5194184.html</a></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="欧拉定理（ACM中一般求素因子个数）"><a href="#欧拉定理（ACM中一般求素因子个数）" class="headerlink" title="欧拉定理（ACM中一般求素因子个数）"></a>欧拉定理（ACM中一般求素因子个数）</h4><ul>
+<li>若m是素数，则素数有m - 1个</li>
+<li>若m = p <em> q,且p,q为素数，则(p - 1) </em> (q - 1)个，p <em> p就有p </em> (p - 1)个</li>
+<li>书上的公式4.20.4.21就是ACM欧拉定理的来源。</li>
+<li>4.22Fermat定理打不出来，记住就好。</li>
+<li>本原元：(1 ~ n - 1)的个数在%n时都有，即为一个循环节。</li>
+</ul>
+<h4 id="中国剩余定理（孙子定理）：（待续）"><a href="#中国剩余定理（孙子定理）：（待续）" class="headerlink" title="中国剩余定理（孙子定理）：（待续）"></a>中国剩余定理（孙子定理）：（待续）</h4><h4 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h4><ul>
+<li>素数筛选法：<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码A</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">   /*素数筛选法---算法竞赛必会*/</span><br><span class="line"><span class="comment">#include &lt;stdio.h&gt;  </span></span><br><span class="line"><span class="comment">#include &lt;stdbool.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;memory.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;math.h&gt;</span></span><br><span class="line">int main (void)  </span><br><span class="line">&#123;  </span><br><span class="line">    int n=100,i,j;  </span><br><span class="line">    bool prime[101];              //C99 bool?<span class="comment">#include&lt;stdbool.h&gt;?  </span></span><br><span class="line">    memset(prime,1,sizeof(prime));//??????  </span><br><span class="line">    prime[0]=prime[1]=0;          //0?1????  </span><br><span class="line">    <span class="keyword">for</span> (i=2; i&lt;=sqrt(n); i++)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">if</span>(prime[i])  </span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">for</span>(j=i*i; j&lt;=n; j+=i)//j=i*i?j=i+i???  </span><br><span class="line">            &#123;  </span><br><span class="line">                prime[j]=0;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    int k=0;  </span><br><span class="line">    <span class="keyword">for</span>(i=0; i&lt;=n; i++)  </span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">if</span>(prime[i])  </span><br><span class="line">        &#123;  </span><br><span class="line">            k++;  </span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d "</span>,i);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"\n~~~%d "</span>,k);  </span><br><span class="line">    <span class="built_in">return</span> 0;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div></li>
+<li>费马小定理:   <div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码A</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   LL pow_mod(LL a, LL b, LL p)&#123;//a的b次方求余p</span><br><span class="line">    LL ret = 1;</span><br><span class="line">    <span class="keyword">while</span>(b)&#123;</span><br><span class="line">        <span class="keyword">if</span>(b &amp; 1) ret = (ret * a) % p;</span><br><span class="line">        a = (a * a) % p;</span><br><span class="line">        b &gt;&gt;= 1;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line">LL Fermat(LL a, LL p)&#123;//费马求a关于b的逆元</span><br><span class="line">        <span class="built_in">return</span> pow_mod(a, p-2, p);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div></li>
+<li>欧几里得:<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码A</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">LL gcd(LL a, LL b)&#123;<span class="built_in">return</span> b==0?a:gcd(b,a%b);&#125;</span><br><span class="line">__gcd(a, b);</span><br></pre></td></tr></table></figure>
+
+</div></div></li>
+<li>扩展欧几里得：<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码A</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">#include&lt;cstdio&gt;</span></span><br><span class="line">typedef long long LL;</span><br><span class="line">void ex_gcd(LL a, LL b, LL &amp;x, LL &amp;y, LL &amp;d)&#123;</span><br><span class="line">    <span class="keyword">if</span> (!b) &#123;d = a, x = 1, y = 0;&#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        ex_gcd(b, a % b, y, x, d);</span><br><span class="line">        y -= x * (a / b);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">LL inv(LL t, LL p)&#123;//如果不存在，返回-1</span><br><span class="line">    LL d, x, y;</span><br><span class="line">    ex_gcd(t, p, x, y, d);</span><br><span class="line">    <span class="built_in">return</span> d == 1 ? (x % p + p) % p : -1;</span><br><span class="line">&#125;</span><br><span class="line">int <span class="function"><span class="title">main</span></span>()&#123;</span><br><span class="line">    LL a, p;</span><br><span class="line">    <span class="keyword">while</span>(~scanf(<span class="string">"%lld%lld"</span>, &amp;a, &amp;p))&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, inv(a, p));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</div></div></li>
+<li>神秘解法，比费马和欧几里得都要好。：<div><div class="fold_hider"><div class="close hider_title">Empirefree专属代码A</div></div><div class="fold">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">#include&lt;cstdio&gt;</span></span><br><span class="line">const int N = 200000 + 5;</span><br><span class="line">const int MOD = (int)1e9 + 7;</span><br><span class="line">int inv[N];</span><br><span class="line">int <span class="function"><span class="title">init</span></span>()&#123;</span><br><span class="line">    inv[1] = 1;</span><br><span class="line">    <span class="keyword">for</span>(int i = 2; i &lt; N; i ++)&#123;</span><br><span class="line">        inv[i] = (MOD - MOD / i) * 1ll * inv[MOD % i] % MOD;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">int <span class="function"><span class="title">main</span></span>()&#123;</span><br><span class="line">    init();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </div></div>
+</li>
+</ul>
 
       
     </div>
@@ -516,6 +576,37 @@
 	<div>
       
         
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+ 
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>本文标题:</span><a href="/2018/09/25/密码学-数论/">密码学-数论</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Empirefree 的个人博客">Empirefree</a></p>
+  <p><span>发布时间:</span>2018年09月25日 - 19:09</p>
+  <p><span>最后更新:</span>2018年09月25日 - 21:09</p>
+  <p><span>原始链接:</span><a href="/2018/09/25/密码学-数论/" title="密码学-数论">https://empirefree.top/2018/09/25/密码学-数论/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://empirefree.top/2018/09/25/密码学-数论/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
 
       
 </div>
@@ -567,7 +658,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/图论/" rel="tag"><i class="fa fa-tag"></i> 图论</a>
+            <a href="/tags/密码学/" rel="tag"><i class="fa fa-tag"></i> 密码学</a>
           
         </div>
       
@@ -580,8 +671,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/23/分块-莫队/" rel="next" title="Different Integers(J题)">
-                <i class="fa fa-chevron-left"></i> Different Integers(J题)
+              <a href="/2018/09/24/Markdown初步入门/" rel="next" title="Markdown初步入门">
+                <i class="fa fa-chevron-left"></i> Markdown初步入门
               </a>
             
           </div>
@@ -589,10 +680,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/25/2017CCPC题解/" rel="prev" title="2017中国大学生程序设计竞赛 - 网络选拔赛题解">
-                2017中国大学生程序设计竞赛 - 网络选拔赛题解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -673,8 +760,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -845,6 +941,22 @@
         </div>
       </section>
 	
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#知识储备"><span class="nav-number">1.</span> <span class="nav-text">知识储备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#惟一分解定理"><span class="nav-number">2.</span> <span class="nav-text">惟一分解定理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逆元"><span class="nav-number">3.</span> <span class="nav-text">逆元</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#欧拉定理（ACM中一般求素因子个数）"><span class="nav-number">4.</span> <span class="nav-text">欧拉定理（ACM中一般求素因子个数）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中国剩余定理（孙子定理）：（待续）"><span class="nav-number">5.</span> <span class="nav-text">中国剩余定理（孙子定理）：（待续）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#拓展"><span class="nav-number">6.</span> <span class="nav-text">拓展</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 		
       
 

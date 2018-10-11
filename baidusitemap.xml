@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://empirefree.top/2018/09/08/hello-world/</loc>
+    <lastmod>2018-10-11T06:28:14.334Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2018-09-08T10:09:35.704Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo+Github搭建博客" url="https://empirefree.top/categories/Hexo-Github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://empirefree.top/2018/10/07/%E5%A4%A7%E4%B8%89%E4%B8%8A%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2018-10-10T12:15:45.435Z</lastmod>
     <data>
@@ -711,23 +731,6 @@
              
               <breadCrumb title="ACM_容斥原理" url="https://empirefree.top/categories/ACM-%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://empirefree.top/2018/09/08/hello-world/</loc>
-    <lastmod>2018-06-22T10:28:07.762Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2018-09-08T10:09:35.704Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
         </display>
     </data>
     </url>
